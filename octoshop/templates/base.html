@@ -1,0 +1,357 @@
+{% load static %}
+{% load mptt_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- 404-page 06:47:00 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>{{business.title}}</title>
+
+
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="{% static "css/responsive.css" %}">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "images/favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" href="{% static "images/favicon/favicon-32x32.png" %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static "images/favicon/favicon-16x16.png" %}" sizes="16x16">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="keywords" content="branding, digital, design, studio, creative, services,consulting" />
+    <meta name="description" content="assure une gamme de services d’assistance et conseil en affaires pour une gestion efficace. " />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="French" />
+    <meta content="Octopus Consulting" name="author" />
+    <meta property="og:url" content="https://www.pmatel.com/" />
+    <meta property="og:title" content="{{business.title}}" />
+    <meta property="og:type" content="Services" />
+    <meta property="og:site_name" content="{{business.name}} | {{business.title}}" />
+    <!-- Fixing Internet Explorer-->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="js/html5shiv.js"></script>
+    <![endif]-->
+{% block style_css %}
+  
+{% endblock style_css %}
+</head>
+
+<body>
+    <div class="boxed_wrapper">
+
+        <div class="preloader"></div>
+
+        <!-- Start Top Bar style2 -->
+        <section class="top-bar-style2">
+            <div class="top-style2 clearfix">
+                <div class="top-style2-left">
+                    <p><span class="icon-music"></span>Service Clients</p>
+                    <ul>
+                        <li>{{business.phone}}</li>
+                        <li>{{business.email}}</li>
+                    </ul>
+                </div>
+                <div class="top-style2-right">
+                    <ul class="top-right-menu">
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Se connecter</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        {% comment %}
+                          
+                        <li>
+                            <select id="polyglot-language-options">
+                                <option id="en" value="en" selected>Français</option>
+                                <option id="fr" value="fr">English</option>
+                                <option id="es" value="ar">عربي</option>
+                            </select>
+                        </li>
+                        {% endcomment %}
+                    </ul>
+                    <ul class="topbar-social-links">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Top Bar style2 -->
+
+        <!--Start Main Header-->
+        <header class="main-header header-style2 stricky">
+            <div class="inner-container clearfix">
+                <div class="logo-box-style2 float-left">
+                    <a href="{% url 'core:index' %}">
+                        <img src="{{business.logo.url}}" alt="logo {{business.name}}">
+                    </a>
+                </div>
+                <div class="main-menu-box float-right">
+                    <nav class="main-menu style2 clearfix">
+                        <div class="navbar-header clearfix">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="{{index_page}}"> <a href="{% url 'core:index' %}">Home</a></li>
+                                <li class="{{about_page}}"><a href="{% url 'core:about' %}">A propos</a></li>
+                                <li class="dropdown"><a href="{% url 'core:products' %}">Nos catégories</a>
+                                    <ul>
+                                        {% recursetree categories %}
+                                            <li {% if node.children.count > 0 %} class="dropdown" {% endif %}>
+                                                <a href="{{node.get_absolute_url}}">{{node.name}}</a>
+                                                {% if node.children.count > 0 %}
+                                                    <ul>
+                                                        {% for tree in node.children.all %}
+                                                            <li><a href="{{tree.get_absolute_url}}">{{tree.name}}</a></li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                            </li>
+                                        {% endrecursetree %}
+                                    </ul>
+                                </li>
+                                <!-- <li class="gauches float-right"><a href="{% url 'core:products'  %}?new=new">Commande rapide</a></li> Commande rapide a faire aprés la finition du site -->
+                                <li class="{{contact_page}}"><a href="{% url 'core:contact' %}">Contact</a></li>
+                                <li class="gauches float-right"><a href="{% url 'core:products'  %}?new=new">Nouveautés</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="mainmenu-right style2">
+                        <div class="outer-search-box">
+                            <div class="seach-toggle"><i class="fa fa-search"></i></div>
+                            <ul class="search-box">
+                                <li>
+                                    <form action="{% url 'core:products' %}" method="GET">
+                                        <div class="form-group">
+                                            <input type="search" name="name" placeholder="Rechercher marque, ref ...." required>
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cart-box" id="hm-minicart">
+                            {% include "snippets/cart-count.html" %}
+                        </div>
+                        <div class="button">
+                            <a class="btn-one" href="#">Get a Quote<span class="flaticon-next"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Main Header-->
+{% block content %}
+  
+{% endblock content %}
+
+        <!--Start footer area Style4-->
+        <footer class="footer-area style4">
+            <div class="container">
+                <div class="row">
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50-s4">
+                            <div class="our-info-box">
+                                <div class="footer-logo">
+                                    <a href="{% url 'core:index' %}">
+                                        <img src="{{business.logo_negatif.url}}" alt="Awesome Logo">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <p>{{business.title}}</p>
+                                </div>
+                                <div class="follow-us-social-links clearfix">
+                                    <span>Suivez nous sur:</span>
+                                    <ul>
+                                        {% if business.facebook %}
+                                            <li><a href="{{business.facebook}}">Facebook</a></li>
+                                        {% endif %}
+                                        {% if business.linkedin %}
+                                            <li><a href="{{business.linkedin}}">LinkedIn</a></li>
+                                        {% endif %}
+                                        {% if business.insta %}
+                                            <li><a href="{{business.insta}}">Instagram</a></li>
+                                        {% endif %}
+                                        {% if business.twitter %}
+                                            <li><a href="{{business.twitter}}">Twitter</a></li>
+                                        {% endif %}
+                                        {% if business.youtube %}
+                                            <li><a href="{{business.youtube}}">Youtube</a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                        <div class="single-footer-widget s4">
+                            <div class="title-style2">
+                                <h3>LIENS RAPIDES</h3>
+                            </div>
+                            <div class="usefull-links">
+                                <ul class="float-left">
+                                    <li><a href="{% url 'core:about' %}">PMATEL</a></li>
+                                    <li><a href="{% url 'core:products' %}">Catalogue</a></li>
+                                    <li><a href="{% url 'core:contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'business:faq' %}">FAQ</a></li>
+                                </ul>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                        <div class="single-footer-widget s4">
+                            <div class="title-style2">
+                                <h3>Découvrez</h3>
+                            </div>
+                            <div class="usefull-links">
+                                <ul class="float-left">
+                                    {% for cat in random_cat %}
+                                        <li><a href="{{cat.get_absolute_url}}">{{cat.name}}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="footer-contact-info-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <ul class="footer-contact-info clearfix">
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-global"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Flat 20, Reynolds Neck, North<br> Helenaville, FV77 8WS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-support1"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>+324 123 45 978 & 01<br> <span>Mon - Friday:</span> 9.00am to 6.00pm</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-shipping-and-delivery"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>abc@yourdomain.com<br> crystalocareer@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Footer Contact Info Area-->
+
+        <!--Start footer bottom area-->
+        <section class="footer-bottom-area style3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="copyright-text text-center">
+                            <span class="copyright">
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tout droits resérvé Kahraba Center | Réalisé par   <a style="color: #ffffff;" href="https://octopus-consulting.com" target="_blank">Octopus Consulting</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End footer bottom area-->
+    </div>
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+
+    <script src="https://unpkg.com/htmx.org@1.5.0" ></script>
+    <script>
+        document.body.addEventListener('htmx:configRequest', (event) => {
+          event.detail.headers['X-CSRFToken'] = '{{ csrf_token }}';
+        })
+    </script>
+
+    <script src="{% static "js/jquery.js" %}"></script>
+    <script src="{% static "js/appear.js" %}"></script>
+    <script src="{% static "js/bootstrap.bundle.min.js" %}"></script>
+    <script src="{% static "js/bootstrap-select.min.js" %}"></script>
+    <script src="{% static "js/isotope.js" %}"></script>
+    <script src="{% static "js/jquery.bootstrap-touchspin.js" %}"></script>
+    <script src="{% static "js/jquery.countTo.js" %}"></script>
+    <script src="{% static "js/jquery.easing.min.js" %}"></script>
+    <script src="{% static "js/jquery.enllax.min.js" %}"></script>
+    <script src="{% static "js/jquery.fancybox.js" %}"></script>
+    <script src="{% static "js/jquery.mixitup.min.js" %}"></script>
+    <script src="{% static "js/jquery.paroller.min.js" %}"></script>
+    <script src="{% static "js/owl.js" %}"></script>
+    <script src="{% static "js/validation.js" %}"></script>
+    <script src="{% static "js/wow.js" %}"></script>
+
+    <script src="{% static "js/map-helper.js" %}"></script>
+
+    <script src="{% static "js/jquery.polyglot.language.switcher.js" %}"></script>
+    <script src="{% static "js/timePicker.js" %}"></script>
+    <script src="{% static "js/html5lightbox.js" %}"></script>
+    <script src="{% static "js/jquery-ui.js" %}"></script>
+    <script src="{% static "js/bootstrap-select.min.js" %}"></script>
+
+    <!--Revolution Slider-->
+    <script src="{% static "plugins/revolution/js/jquery.themepunch.revolution.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/jquery.themepunch.tools.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.actions.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.carousel.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.kenburn.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.migration.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.navigation.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.parallax.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.slideanims.min.js" %}"></script>
+    <script src="{% static "plugins/revolution/js/extensions/revolution.extension.video.min.js" %}"></script>
+    <script src="{% static "js/main-slider-script.js" %}"></script>
+
+    <!-- thm custom script -->
+    <script src="{% static "js/added-js.js" %}"></script>
+    <script src="{% static "js/custom.js" %}"></script>
+
+
+
+</body>
+
+
+<!-- 404-page 06:47:00 GMT -->
+</html>

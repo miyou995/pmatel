@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load static %}
+{% load mptt_tags %}
+
+{% block content %}
+{% if category and request.GET.category != 'all' %}
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="breadcrumbs d-flex flex-row align-items-center" style="margin-bottom: 0px;">
+                            <ul>
+                                <li><a href="{% url 'core:index' %}">Acceuil</a></li>
+                                {% for cat in category.get_ancestors %}
+                                <li><a href="{{cat.get_absolute_url}}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{cat.name}}</a></li>
+                                {% endfor %}
+                                <li class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>{{category.name}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endif %}
+
+<section id="shop-area" class="main-shop-area" style="padding-top: 20px;">
+    <div class="container">
+        <div class="row m-3">
+            {% for cat in category.get_children %}
+                <div class="col-sm-6 col-md-4 col-xl-3 mb-2">
+                    <a href="{{cat.get_absolute_url}}">
+                    <div class="cat-box pt-3 d-flex" >
+                            <span class="d-inline-block pr-10">
+                                <span class="d-flex category-span">
+                                    {% if cat.icon %}
+                                        <img class="d-block img-fluid" src="{{cat.icon.url}}" alt="{{cat.name}}" >
+                                    {% else %}
+                                        <img class="d-block img-fluid" src="{% static "images/icon/category.png" %}" alt="no icon" >
+                                    {% endif %}
+                                </span>
+                            </span>
+                            <span class="align-middle d-inline-block text ml-2" style="color: #000000;">{{cat.name}}</span>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 float-right">
+                {% include "snippets/htmx_products.html" %}
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12 float-left">
+                <form  class="shop-sidebar-wrapper" action="{% url 'core:filtered-products' %}" hx-get="{% url 'core:filtered-products' %}" hx-target="#removed-products" hx-swap="outerHTML">
+                        <div class="single-sidebar-box">
+                            <div class="search-form">
+                                <input name="name" placeholder="Search..." type="text">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                        </div>
+                        <div class="single-sidebar-box pdbtm">
+                            <div class="shop-sidebar-title">
+                                <h3>Categories</h3>
+                            </div>
+                            <ul class="categories clearfix">
+                                {% recursetree categories %}
+                                    <li><a href="{{node.get_absolute_url}}">{{node.name}}</a></li>
+                                {% endrecursetree %}
+                            </ul>
+                        </div>
+                        <div class="sidebar_section">
+                            <div class="sidebar_title">
+                                <h5>Marques</h5>
+                            </div>
+                            <ul class="checkboxes">
+                                {% for brand in brands %}
+                                    <li class="ml-3">
+                                        <input type="checkbox" name="gamme__brand" id="brand-{{brand.id}}" value="{{brand.id}}" >
+                                        <label for="brand-{{brand.id}}">
+                                            <span></span>
+                                            {{brand.name}}
+                                        </label>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            {% if brands.count > 5 %}
+                                <div class="show_more">
+                                    <span><span>+</span>Afficher plus</span>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="sidebar_section">
+                            <div class="sidebar_title">
+                                <h5>Gammes</h5>
+                            </div>
+                            <ul class="checkboxes">
+                                {% for gamme in gammes %}
+                                    <li class="ml-3">
+                                        <input type="checkbox" name="gamme" id="gamme-{{gamme.id}}" value="{{gamme.id}}">
+                                        <label for="gamme-{{gamme.id}}">
+                                            <span></span>
+                                            {{gamme.name}}
+                                        </label>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            {% if gammes.count > 5 %}
+                                <div class="show_more">
+                                    <span><span>+</span>Afficher plus</span>
+                                </div>
+                            {% endif %}
+                        </div>
+                        <div class="placeorder-button text-left">
+                            <button class="btn-one" type="submit">Filtrer</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

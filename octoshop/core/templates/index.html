@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  
+
+        <!--Main Slider-->
+        <section class="main-slider style3">
+            <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
+                <div class="rev_slider fullwidthabanner" id="rev_slider_three" data-version="5.4.1">
+                    <ul>
+                        {% for slide in big_slides %}
+                        {% if forloop.counter0|divisibleby:"3" %}
+                            <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default"
+                            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{{slide.photo.url}}"
+                            data-title="Slide Title" data-transition="parallaxvertical">
+                            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{{slide.photo.url}}">
+
+                            {% if slide.title %}
+                                <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']" data-voffset="['-145','-100','-100','-90']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;">
+                                        <div class="slide-content left-slide" style="width: 1000px;">
+                                            <div class="big-title">
+                                            {{slide.title}}
+                                            </div>
+                                        </div>
+                                    </div>
+                            {% endif %}
+                            {% if slide.sub_title %}
+                                <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']" data-voffset="['-15','15','-5','0']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"}, {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
+                                    <div class="slide-content left-slide">
+                                        <div class="text mt-3">{{slide.sub_title}}</div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                            {% if slide.title or slide.sub_title %}
+                                <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['800','800','500','400']" data-whitespace="normal"
+                                    data-hoffset="['15','15','15','15']" data-voffset="['85','115','90','90']" data-x="['left','left','left','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                                    style="z-index: 7; white-space: nowrap;">
+                                    <div class="slide-content left-slide">
+                                        <div class="btn-box">
+                                            <a class="btn-one" href="#">Découvrez Plus<span class="flaticon-next"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </li>
+                        {% else %}
+                        <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
+                        data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{{slide.photo.url}}"
+                        data-title="Slide Title" data-transition="parallaxvertical">
+
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{{slide.photo.url}}">
+
+
+                        <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']" data-voffset="['-160','-100','-110','-105']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                            style="z-index: 7; white-space: nowrap;">
+                            <div class="slide-content left-slide">
+                                <div class="big-title">
+                                    {{slide.title}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']" data-voffset="['-75','-10','-25','-30']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},
+                    {"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' style="z-index: 7; white-space: nowrap;">
+                            <div class="slide-content left-slide">
+                                <div class="text mt-3">{{slide.sub_title}}</div>
+                            </div>
+                        </div>
+                        <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-width="['700','800','700','500']" data-whitespace="normal"
+                            data-hoffset="['15','15','15','15']" data-voffset="['25','90','100','85']" data-x="['right','right','right','left']" data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+                            style="z-index: 7; white-space: nowrap;">
+                            <div class="slide-content left-slide">
+                                <div class="btn-box">
+                                    <a class="btn-one" href="#">Découvrez Plus<span class="flaticon-next"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                        </li>
+                        {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--End Main Slider-->
+
+        <!--Start About Style2 Area-->
+        <section class="about-style2-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5">
+                        <div class="about-style2-text">
+                            <div class="sec-title">
+                                <p></p>
+                                <div class="title">CAME BPT <br><span>Exclusive & Official Distributor Algeria</span><br>SARL PMATEL</div>
+                            </div>
+                            <div class="text">
+                                <p>{{ business.about|safe}}</p>
+                            </div>
+                            <div class="authorised-info">
+                            </div>
+                            <div class="button">
+                                <a class="btn-one" href="{% url 'core:about' %}">PLUS SUR PMATEL<span class="flaticon-next"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="about-style2-image-box">
+                            <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
+                            <div class="image">
+                                <img src="{% static "images/resources/about-style2-image.jpg" %}" alt="Awesome Image">
+                                <div class="overlay-box">
+                                    <div class="title">
+                                        <h1>27 <span>ans d'éxperiance<br>sur le marché</span></h1>
+                                    </div>
+                                    <div class="button">
+                                        <a href="#"><span class="icon-back"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End About Style2 Area-->
+
+
+        <!--Start Latest Projects Area-->
+        <section class="latest-projects-area">
+            <div class="container-fluid latest-projects-v3">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="project-carousel-v3 owl-carousel owl-theme">
+                            
+                            {% for promo in promotions %}
+                                <div class="single-project-style3">
+                                    <div class="img-holder">
+                                        <a href="{{promo.url}}">
+                                            <img src="{{promo.photo.url}}" alt="Awesome Image">
+                                            <div class="overlay-content">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Latest Projects Area-->
+
+        <!--Start Recently Project Area-->
+        <section class="recently-project-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="sec-title float-left">
+                            <div class="title">Nouvel  <span> arrivage</span></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="project-carousel owl-carousel owl-theme">
+                    {% for product in new_products %}
+                        <div class="single-project-style1" style="max-height: 470px;">
+                            <div class="product-item men" style="max-height: 470px;">
+                                <div class="product discount product_filter">
+                                    <div class="product_image">
+                                        <a href="{{product.get_absolute_url}}">
+                                            <img 
+                                            {% if product.photos.all.0 %}
+                                                src="{{product.photos.all.0.fichier.url}}" alt="{{product.name}}" style="max-height: 225px;width: auto;">
+                                            {% else %}
+                                                src="{% static "images/pas-images.png" %}" alt="Pas de photo pour le moment"style="max-height: 225px;width: auto;">
+                                            {% endif %}
+                                        </a>
+                                    </div>
+                                    <div class="favorite favorite_left"></div>
+                                    {% if product.promo %}
+                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>{{product.promo}}%</span></div>
+                                    {% endif %}
+                                    <div class="product_info mt-3">
+                                        {% if product.gamme %}
+                                            <a class="d-block" href="{{product.gamme.get_absolute_url}}" style="color: #333;text-decoration: none; text-align: left;">{{product.gamme}}</a>
+                                        {% else %}
+                                            <br>
+                                        {% endif %}
+                                        {% if product.reference %}
+                                            <a class="d-block" href="{{product.get_absolute_url}}" style="color: #333;text-decoration: none; text-align: left;">Réf:{{product.reference}}</a>
+                                        {% else %}
+                                            <br>
+                                        {% endif %}
+                                    <hr class="m-0">
+                                        <p class="product_name m-0" ><a href="{{product.get_absolute_url}}">{{product.name|truncatewords:8}}</a> </p>
+                                        <div class="product_price ">{{product.price}} DA {% if product.old_price %}<span>{{product.old_price}}</span>{% endif %}</div>
+                                    </div>
+                                </div>
+                                <div class="red_button add_to_cart_button"><a class="text-light" hx-post="{% url 'cart:cart_one_add' product.id %}" hx-target="#hm-minicart" hx-swap="innerHTML" >ajouter au panier</a></div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!--End Recently Project Area-->
+        <section class="slogan-style2-area" style="background-image:url(static/images/parallax-background/slogan-bg.jpg);">
+            <div class="icon-holder">
+                <span class="flaticon-car"></span>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="inner-content">
+                            <div class="title">
+                                <h1>Une assistance technique et un service après vente assurés à long terme.</h1>
+                            </div>
+                            <div class="button">
+                                <a class="btn-one call-us" href="tel:{{business.phone}}"><i class="icon-music"></i>{{business.phone}}</a>
+                                <a class="btn-one" href="{% url 'core:contact' %}">Devis instantané<span class="flaticon-next"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock content %}

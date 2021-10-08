@@ -1,0 +1,216 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!--Start Checkout area-->
+        <section class="cart-area" style="padding: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="table-outer">
+                            <table class="cart-table">
+                                <thead class="cart-header">
+                                    <tr>
+                                        <th class="prod-column">Produits</th>
+                                        <th>&nbsp;</th>
+                                        <th>Quantity</th>
+                                        <th class="price">Prix <small>(DA)</small></th>
+                                        <th>Total</th>
+                                        <th>Supprimer</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                {% for item in cart %}
+                                    {% with product=item.product %}
+                                    <tr>
+                                        <td colspan="2" class="prod-column">
+                                            <div class="column-box">
+                                                <div class="prod-thumb">
+                                                    <a href="{{product.get_absolute_url}}">
+                                                        {% if product.photos.all.0 %}
+                                                            <img src="{{product.photos.all.0.fichier.url}}"alt="{{product.name|truncatewords:3}}">
+                                                        {% else %}
+                                                            <img src="{% static 'images/pas-images.png' %}" alt="{{product.name|truncatewords:3}}">
+                                                        {% endif %}
+                                                    </a>
+                                                </div>
+                                                <div class="title">
+                                                    <h3 class="prod-title">{{product.name|truncatewords:3}}</h3>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="qty d-inline-flex">
+                                            <form action="{% url 'cart:cart_add' product.id %}" method="post">
+                                                {% csrf_token %}
+                                                {{ item.update_quantity_form.override }}
+                                                    <input class="quantity-spinner " type="text" value="{{item.quantity}}" name="quantity">
+                                                <div class="d-flex" style="margin-left: 60px;">
+                                                    <button style="background-color: #333;border: none;color: white;font-size: 20px;cursor: pointer;" class="btn ml-3" type="submit"> <i class="fa fa-check"></i></button>
+                                                </div>
+                                            </form>
+                                        </td>
+                                        <td class="price">{{product.price}}</td>
+                                        <td class="sub-total">{{item.total_price}}</td>
+                                        <td class="d-flex justify-content-center " style="padding-top: 40%;">
+                                            <a class="ml-auto mr-auto text-center" href="{% url 'cart:cart_remove' product.id %}">X</a>
+                                        </td>
+                                        {% if cart.coupon %}
+                                            <tr class="subtotal">
+                                                <td>Sous Total</td>
+                                                <td colspan="5"></td>
+                                                <td class="num">{{ cart.get_total_price|floatformat:2 }} DA</td>
+                                            </tr>
+                                            <tr>
+                                                <td>"<strong>{{ cart.coupon.code }}</strong>"</td>
+                                                <td colspan="5"></td>
+                                                <td class="num neg">-{{ cart.get_discount|floatformat:2 }} DA</td>
+                                            </tr>
+                                        {% endif %}
+                                    </tr>
+                                    {% endwith %}
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cart-middle">
+                    <div class="col-xl-6 col-lg-9 col-md-8 col-sm-12">
+                        <div class="apply-coupon">
+                            <input type="text" name="coupon-code" value="" placeholder="Entrer un Code Coupon ...">
+                            <div class="apply-coupon-button">
+                                <button class="btn-one" type="button">Valider</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="checkout-area mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="cart-total">
+                            <div class="shop-page-title">
+                                <div class="title">Totales <span>Panier</span></div>
+                            </div>
+                            <ul class="cart-total-table">
+                                <li class="clearfix">
+                                    <span class="col col-title">Panier</span>
+                                    <span class="col">{{cart.get_total_price}}</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="col col-title">Réduction</span>
+                                    <span class="col">{{cart.discount}}</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="col col-title">Livraison</span>
+                                    <span class="col" id="deliveryCost">/</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="col col-title">Total</span>
+                                    <span class="col"class="order-total" id="order_total" data-order-total="{{ cart.get_total_price_after_discount|floatformat:2}}">{{cart.get_total_price_after_discount}}</span>
+                                </li>
+                            </ul>
+                            <div class="placeorder-button text-left">
+                                <button class="btn-one" type="submit" form="order_form">Confirmer la commande</button>
+                            </div>
+                            <!-- <div class="payment-options">
+                                <div class="option-block">
+                                    <div class="checkbox">
+                                        <label>
+                                    <input name="pay-us" type="checkbox">
+                                    <span>Direct Bank Transfer</span>
+                                </label>
+                                    </div>
+                                    <div class="text">
+                                        <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                    </div>
+                                </div>
+                                <div class="option-block">
+                                    <div class="radio-block">
+                                        <div class="checkbox">
+                                            <label>
+                                        <input name="pay-us" type="checkbox">
+                                        <span>Paypal <b>What is Paypal</b></span>
+                                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="placeorder-button text-left">
+                                    <button class="btn-one" type="submit" form="order_form">Confirmer la commande</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="form billing-info">
+                            <div class="shop-page-title">
+                                <div class="title">Informations de livraison</div>
+                            </div>
+                            <form id="order_form" method="post" data-communes-url="{% url 'delivery:load_communes' %}">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="field-label">Nom</div>
+                                        <div class="field-input">
+                                            <input type="text" name="first_name" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field-label">Prenom</div>
+                                        <div class="field-input">
+                                            <input type="text" name="last_name" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="field-label">Addresse *</div>
+                                        <div class="field-input">
+                                            <input type="text" name="address" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field-label">Wilaya*</div>
+                                        <select class="custom-select" name="wilaya" id="wilayaId" >
+                                            <option class="option" value='' selected>Wilaya</option>
+                                            {% for wilaya in wilayas %}
+                                                <option  data-price={{wilaya.price}}  value={{wilaya.id}} >{{wilaya.name}}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="field-label">Commune</div>
+                                        <select class="custom-select" name="commune" id="communesId" required>
+                                            <option class="option" value='' selected>Communes</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="field-label">Contact Info *</div>
+                                        <div class="field-input">
+                                            <input type="text" name="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="field-input">
+                                            <input type="text" name="phone" placeholder="Téléphone *">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="create-acc">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="ship-same-address">
+                                                    <span>Creer un compte</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+{% endblock content %}

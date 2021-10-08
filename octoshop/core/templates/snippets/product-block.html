@@ -1,0 +1,43 @@
+
+{% load static %}
+<div class="product-item men">
+    <div class="product discount product_filter">
+        <div class="product_image">
+            <a href="{{product.get_absolute_url}}">
+                <img 
+                {% if product.photos.all.0 %}
+                    src="{{product.photos.all.0.fichier.url}}" alt="{{product.name}}" style="height: 225px; width: auto;">
+                {% else %}
+                    src="{% static "images/pas-images.png" %}" alt="Pas de photo pour le moment">
+                {% endif %}
+            </a>
+        </div>
+        <div class="favorite favorite_left"></div>
+        {% if product.promo %}
+            <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>{{product.promo}}%</span></div>
+        {% endif %}
+        <div class="product_info mt-3">
+            {% if product.gamme %}
+                <a class="d-block" href="{{product.gamme.get_absolute_url}}" style="color: #333;text-decoration: none; text-align: left;">{{product.gamme}}</a>
+            {% else %}
+                <br>
+            {% endif %}
+           <a class="d-block"href="{{product.get_absolute_url}}" style="color: #333;text-decoration: none; text-align: left;">Réf:{{product.reference}}</a>
+           <hr class="m-0">
+            <p class="product_name m-0" ><a href="{{product.get_absolute_url}}">{{product.name|truncatewords:8}}</a> </p>
+            <div class="product_price ">{{product.price}} DA {% if product.old_price %}<span>{{product.old_price}}</span>{% endif %}</div>
+        </div>
+    </div>
+    <div class="red_button add_to_cart_button" style="margin-left: 0px;width: 100%;"><a class="text-light" hx-target="#hm-minicart" hx-swap="innerHTML" hx-post="{% url 'cart:cart_one_add' product.id %}">ajouter au panier</a></div>
+</div>
+{% block extrajs %}
+    <script type="text/javascript">
+        $('.block2-btn-addcart').each(function(){
+            var nameProduct = $(this).parent().parent().parent().parent().find('.product_name').html();
+            $(this).on('click', function(){
+                swal(nameProduct, "Ajouté au panier", "success");
+            });
+        });
+    </script>
+{% endblock extrajs %}
+ 
