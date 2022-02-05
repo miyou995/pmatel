@@ -2,14 +2,13 @@
 {% load mptt_tags %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 
 <!-- 404-page 06:47:00 GMT -->
 <head>
     <meta charset="UTF-8">
     <title>{{business.title}}</title>
-
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,9 +20,9 @@
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="{% static "css/responsive.css" %}">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static "images/favicon/apple-touch-icon.png" %}">
-    <link rel="icon" type="image/png" href="{% static "images/favicon/favicon-32x32.png" %}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{% static "images/favicon/favicon-16x16.png" %}" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{business.logo.url}}">
+    <link rel="icon" type="image/png" href="{{business.logo.url}}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{business.logo.url}}" sizes="16x16">
 
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="keywords" content="branding, digital, design, studio, creative, services,consulting" />
@@ -47,9 +46,7 @@
 
 <body>
     <div class="boxed_wrapper">
-
         <div class="preloader"></div>
-
         <!-- Start Top Bar style2 -->
         <section class="top-bar-style2">
             <div class="top-style2 clearfix">
@@ -62,7 +59,7 @@
                 </div>
                 <div class="top-style2-right">
                     <ul class="top-right-menu">
-                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Se connecter</a></li>
+                        <!-- <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Se connecter</a></li> -->
                         <li><a href="#">FAQ</a></li>
                         {% comment %}
                           
@@ -84,7 +81,6 @@
             </div>
         </section>
         <!-- End Top Bar style2 -->
-
         <!--Start Main Header-->
         <header class="main-header header-style2 stricky">
             <div class="inner-container clearfix">
@@ -145,9 +141,9 @@
                         <div class="cart-box" id="hm-minicart">
                             {% include "snippets/cart-count.html" %}
                         </div>
-                        <div class="button">
-                            <a class="btn-one" href="#">Get a Quote<span class="flaticon-next"></span></a>
-                        </div>
+                        <!-- <div class="button">
+                            <a class="btn-one" href="#">Devis rapide<span class="flaticon-next"></span></a>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -156,7 +152,6 @@
 {% block content %}
   
 {% endblock content %}
-
         <!--Start footer area Style4-->
         <footer class="footer-area style4">
             <div class="container">
@@ -242,9 +237,11 @@
                                         <div class="icon">
                                             <span class="icon-global"></span>
                                         </div>
-                                        <div class="text">
-                                            <p>Flat 20, Reynolds Neck, North<br> Helenaville, FV77 8WS</p>
-                                        </div>
+                                        {% if business.adress %}
+                                            <div class="text">
+                                                <p>{{business.adress}}</p>
+                                            </div>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </li>
@@ -255,7 +252,15 @@
                                             <span class="icon-support1"></span>
                                         </div>
                                         <div class="text">
-                                            <p>+324 123 45 978 & 01<br> <span>Mon - Friday:</span> 9.00am to 6.00pm</p>
+                                            <p>
+                                                {% if business.phone %}
+                                                    {{business.phone}}
+                                                {% endif %}
+                                                <br> 
+                                                {% if business.phone2 %}
+                                                    {{business.phone2}}
+                                                {% endif %}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -267,7 +272,15 @@
                                             <span class="icon-shipping-and-delivery"></span>
                                         </div>
                                         <div class="text">
-                                            <p>abc@yourdomain.com<br> crystalocareer@gmail.com</p>
+                                            <p>
+                                                {% if business.email %}
+                                                    {{business.email}}
+                                                {% endif %}
+                                                <br> 
+                                                {% if business.email2 %}
+                                                    {{business.email2}}
+                                                {% endif %}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +300,7 @@
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="copyright-text text-center">
                             <span class="copyright">
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tout droits resérvé Kahraba Center | Réalisé par   <a style="color: #ffffff;" href="https://octopus-consulting.com" target="_blank">Octopus Consulting</a>
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tout droits resérvé <strong class="text-uppercase">{{business.name}}</strong> | Réalisé par <a style="color: #ffffff;" href="https://octopus-consulting.com" target="_blank">Octopus Consulting</a>
                             </span>
                         </div>
                     </div>

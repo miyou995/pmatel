@@ -6,7 +6,7 @@ from .forms import ContactForm
 from delivery.models import Wilaya, Commune
 from django.views.generic import TemplateView, DetailView, ListView, CreateView, View
 from .models import Brand, Gamme, Product, Category
-from business.models import Business, ThreePhotos, Slide, DualBanner, Counter, LargeBanner
+from business.models import Business, ThreePhotos, Slide, Counter, LargeBanner,ClientService, Partner
 from cart.forms import CartAddProductForm
 from business.models import Counter
 from .filters import ProductFilter
@@ -14,17 +14,17 @@ from django.core.paginator import Paginator
 from django.template.loader import render_to_string
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from cart.forms import CartAddProductForm
-
+from django.db.models import F
 class IndexView(TemplateView):
     template_name = "index.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["new_products"] = Product.objects.filter(top=True, new=True)
-        context["top_products"] = Product.objects.filter(top=True)
-        context["big_slides"]   = Slide.objects.all()
-        context["promotions"] = ThreePhotos.objects.all()[:3]
-        context["dual_banners"] = DualBanner.objects.all()[:2]
+        context["new_products"] = Product.objects.filter(top=True, new=True, actif=True)
+        context["top_products"] = Product.objects.filter(top=True, actif=True)
+        context["big_slides"]   = Slide.objects.filter(actif=True)
+        context["promotions"]   = ThreePhotos.objects.all()[:3]
+        # context["dual_banners"] = DualBanner.objects.all()[:2]
         context["large_banner"] = LargeBanner.objects.last()
         context["random_cat"]   = Category.objects.all()
         all_cat = Category.objects.all()
@@ -42,7 +42,9 @@ class AboutView(TemplateView):
     template_name = "about.html"
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context["counters"] = Counter.objects.all()[:4]
+        context["counters"] = Counter.objects.filter(actif=True)[:4]
+        context["processes"] = ClientService.objects.filter(actif=True)[:4]
+        context["clients"] = Partner.objects.filter(actif=True)
         return context
 
 class VirementBancaireView(TemplateView):
@@ -84,12 +86,12 @@ class ProductsView(ListView):
             param = self.request.GET.get('search')
             # print('category', param)
             if param == 'all':
-                category = Category.objects.all()
-                products = Product.objects.all()
+                category = Category.objects.filter(actif=True)
+                products = Product.objects.filter(actif=True)
             
             elif param is None:
-                category = Category.objects.all()
-                products = Product.objects.all()
+                category = Category.objects.filter(actif=True)
+                products = Product.objects.filter(actif=True)
             else:
                 category = Category.objects.get(id = param)
                 products = Product.objects.filter(category__in=category.get_descendants(include_self=True))
@@ -97,14 +99,14 @@ class ProductsView(ListView):
             try:
                 new = self.request.GET.get('new')
                 if new == 'new':
-                    products = Product.objects.filter(new=True)
+                    products = Product.objects.filter(new=True, actif=True)
                 elif new == 'promo':
-                    products = Product.objects.filter(old_price=True)
+                    products = Product.objects.filter(old_price=True, actif=True)
                 else:
                     pass
             except:
-                category = Category.objects.all()
-                products = Product.objects.all()
+                category = Category.objects.filter(actif=True)
+                products = Product.objects.filter(actif=True)
         query = self.request.GET.get('name')
         if query:
             # print('query', query)
@@ -124,17 +126,17 @@ class ProductsView(ListView):
             try:
                 category = self.request.GET.get('category')
                 if category == 'all':                
-                    context["category"] = Category.objects.all()
+                    context["category"] = Category.objects.filter(actif=True)
                 else:                
                     context["category"] = Category.objects.get(id = category)
             except:
                 pass
-        context["brands"] = Brand.objects.all()
-        context["gammes"] = Gamme.objects.all()
+        context["brands"] = Brand.objects.filter(actif=True)
+        gammes = Gamme.objects.filter(actif=True).exclude(name=F('brand__name'))
+        context["gammes"] = gammes
         # context["filters"] = ProductFilter(self.request.GET, queryset= self.get_queryset())
         # context["products"] = Product.objects.all()
         return context
-
 
 
 def filtred_htmx_products(request):
@@ -154,13 +156,13 @@ class ProductDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        random_related = Product.objects.all().order_by('?')[:4] 
-        context["wilayas"] = Wilaya.objects.all().order_by('name') 
+        random_related = Product.objects.filter(actif=True).order_by('?')[:4] 
+        context["wilayas"] = Wilaya.objects.filter(actif=True).order_by('name') 
         prod = self.get_object()
         print('le produit', prod)
         category = prod.category
         print('la categorir', category)
-        products =  Product.objects.filter(category=category)
+        products =  Product.objects.filter(category=category, actif=True)
 
         same_category_products = products.exclude(id=prod.id).order_by('?')[:8]
         print('related products]', products)
@@ -174,7 +176,6 @@ class ProductDetailView(DetailView):
         context['form'] = CartAddProductForm()
         # context['atributes'] = prod.product_type.atributes.all()
         return context
-
 
 class ContactView(CreateView):
     template_name = 'contact.html'

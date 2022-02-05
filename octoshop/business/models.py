@@ -73,8 +73,8 @@ class ThreePhotos(models.Model):
     objects = ActiveManager()
 
     class Meta:
-        verbose_name = '3. Trois Photos Acceuil'
-        verbose_name_plural = '3. Trois Photos Acceuil'
+        verbose_name = '3. Promotions Photos Acceuil'
+        verbose_name_plural = '3. Promotions Photos Acceuil'
 
     def clean(self):
         model = self.__class__
@@ -82,26 +82,26 @@ class ThreePhotos(models.Model):
             raise ValidationError("Vous ne pouvez pas rajouter d'autres photos ( la limites des photos dans ce contexte est 3)")
         super(ThreePhotos, self).clean()
 
-class DualBanner(models.Model):
-    photo = models.ImageField(verbose_name="photo 570 X 200 px", upload_to='slides/', )
-    url   = models.URLField(verbose_name="lien", max_length=200)
-    actif  = models.BooleanField(verbose_name='actif', default=True)
-    objects = ActiveManager()
+# class DualBanner(models.Model):
+#     photo = models.ImageField(verbose_name="photo 570 X 200 px", upload_to='slides/', )
+#     url   = models.URLField(verbose_name="lien", max_length=200)
+#     actif  = models.BooleanField(verbose_name='actif', default=True)
+#     objects = ActiveManager()
 
-    class Meta:
-        verbose_name = '4. Petits Banners en duo'
-        verbose_name_plural = '4. Petits Banners en duo'
+#     class Meta:
+#         verbose_name = '4. Petits Banners en duo'
+#         verbose_name_plural = '4. Petits Banners en duo'
 
-    def clean(self):
-        model = self.__class__
-        if model.objects.count() > 2:
-            raise ValidationError("Vous ne pouvez pas rajouter d'autres photos ( la limites des photos dans ce contexte est 2)")
+#     def clean(self):
+#         model = self.__class__
+#         if model.objects.count() > 2:
+#             raise ValidationError("Vous ne pouvez pas rajouter d'autres photos ( la limites des photos dans ce contexte est 2)")
 
 
 class LargeBanner(models.Model):
     photo      = models.ImageField(verbose_name="Slide 1170 X 400 px", upload_to='slides/', )
     title      = models.CharField(verbose_name="Grand titre de la photo", max_length=50, blank=True, null=True) 
-    sub_title  = models.CharField(verbose_name="Sous titre de la photo", max_length=50, blank=True, null=True) 
+    # sub_title  = models.CharField(verbose_name="Sous titre de la photo", max_length=50, blank=True, null=True) 
     url        = models.URLField(verbose_name="Lien", max_length=250)
     class Meta:
         verbose_name = '5. Grand Banner bas de page d\'accueil'
@@ -115,9 +115,7 @@ class LargeBanner(models.Model):
 
 class Counter(models.Model):
     name    = models.CharField(verbose_name="nom de l'acomplissement", max_length=150) 
-    before  = models.CharField(verbose_name="avant le chiffre", max_length=50, blank=True, null=True) 
     number  = models.IntegerField(verbose_name="chiffre") 
-    icon    = models.ImageField(verbose_name="icon", upload_to='icons/', )
     actif  = models.BooleanField(verbose_name='actif', default=True)
     objects = ActiveManager()
 
@@ -125,19 +123,19 @@ class Counter(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '6. Accomplissement'
-        verbose_name_plural = '6. Accomplissement'
+        verbose_name = '6. Compteur'
+        verbose_name_plural = '6. Compteur'
 
     def clean(self):
         model = self.__class__
         if model.objects.count() > 4:
-            raise ValidationError("Vous ne pouvez pas rajouter plus de quatre Accomplissement")
+            raise ValidationError("Vous ne pouvez pas rajouter plus de quatre indicateur dans le compteur")
 
 
 class ClientService(models.Model):
-    name        = models.CharField(verbose_name="nom de l'acomplissement", max_length=150) 
-    sub_title   = models.CharField(verbose_name="nom de l'acomplissement", max_length=150) 
-    icon        = models.ImageField(verbose_name="icon 67 X 57 px ", upload_to='icons/', )
+    name        = models.CharField(verbose_name="titre de l'acomplissement", max_length=150) 
+    sub_title   = models.CharField(verbose_name="sous titre de l'acomplissement", max_length=150) 
+    # icon        = models.ImageField(verbose_name="icon 67 X 57 px ", upload_to='icons/', )
     actif       = models.BooleanField(verbose_name='actif', default=True)
     objects     = ActiveManager()
 
@@ -145,47 +143,47 @@ class ClientService(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = '7. Service Clients'
-        verbose_name_plural = '7. Services Clients'
+        verbose_name = '7. Process PMATEL page a propos'
+        verbose_name_plural = '7. Process PMATEL page a propos'
 
     def clean(self):
         model = self.__class__
         if model.objects.count() > 4:
-            raise ValidationError("Vous ne pouvez pas rajouter plus de quatre Service Clients")
+            raise ValidationError("Vous ne pouvez pas rajouter plus de quatre Process")
 
 
-class Realisation(models.Model):
-    title    = models.CharField(verbose_name="nom de l'acomplissement", max_length=150) 
-    description     = tinymce_models.HTMLField(verbose_name='Déscription du produit', blank=True, null=True)
+# class Realisation(models.Model):
+#     title    = models.CharField(verbose_name="nom de l'acomplissement", max_length=150) 
+#     description     = tinymce_models.HTMLField(verbose_name='Déscription du produit', blank=True, null=True)
 
-    actif  = models.BooleanField(verbose_name='actif', default=True)
-    created = models.DateTimeField(verbose_name='Date de Création', auto_now_add=True)
-    updated = models.DateTimeField(verbose_name='Date de dernière mise à jour', auto_now=True)
-    objects = ActiveManager()
+#     actif  = models.BooleanField(verbose_name='actif', default=True)
+#     created = models.DateTimeField(verbose_name='Date de Création', auto_now_add=True)
+#     updated = models.DateTimeField(verbose_name='Date de dernière mise à jour', auto_now=True)
+#     objects = ActiveManager()
 
-    def __str__(self):
-        return self.title
-    class Meta:
-        verbose_name = '8. Nos Projets'
-        verbose_name_plural = '8. Nos Projets'
+#     def __str__(self):
+#         return self.title
+#     class Meta:
+#         verbose_name = '8. Nos Projets'
+#         verbose_name_plural = '8. Nos Projets'
 
-class RealisationPhotos(models.Model):
-    realisation = models.ForeignKey(Realisation, verbose_name="Projet / Réalisation", on_delete=models.CASCADE)
-    image    = models.ImageField(verbose_name="icon", upload_to='icons/')
-    actif  = models.BooleanField(verbose_name='actif', default=True)
+# class RealisationPhotos(models.Model):
+#     realisation = models.ForeignKey(Realisation, verbose_name="Projet / Réalisation", on_delete=models.CASCADE)
+#     image    = models.ImageField(verbose_name="icon", upload_to='icons/')
+#     actif  = models.BooleanField(verbose_name='actif', default=True)
     
-    class Meta:
-        verbose_name = '9. Photos de Nos Projets'
-        verbose_name_plural = '9. Photos de Nos Projets'
+#     class Meta:
+#         verbose_name = '9. Photos de Nos Projets'
+#         verbose_name_plural = '9. Photos de Nos Projets'
 
 class Partner(models.Model):
     logo    = models.ImageField(verbose_name="icon", upload_to='icons/', )
-    siteweb = models.URLField(verbose_name="Lien", max_length=250)
+    siteweb = models.URLField(verbose_name="Lien", max_length=250, blank=True, null=True)
     actif  = models.BooleanField(verbose_name='actif', default=True)
     
     class Meta:
-        verbose_name = '9. Nos Partenaires'
-        verbose_name_plural = '9. Nos Partenaires'
+        verbose_name = '9. Notre Partenaire / client'
+        verbose_name_plural = '9. Nos Partenaires / clients'
 
 # def create_counter_signal(sender, **kwargs):
 #     if Counter.objects.count() > 3:

@@ -38,78 +38,33 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="row fact-counter">
-                    <!--Start Single Fact Counter-->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="single-fact-counter wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
-                            <div class="count-box">
-                                <h1>
-                                    <span class="timer" data-from="1" data-to="22" data-speed="5000" data-refresh-interval="50">22</span>
-                                </h1>
-                            </div>
-                            <div class="title">
-                                <h3>ans<br>d'experience</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Fact Counter-->
-                    <!--Start Single Fact Counter-->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="single-fact-counter wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                            <div class="count-box">
-                                <h1>
-                                    <span class="timer" data-from="1" data-to="300" data-speed="5000" data-refresh-interval="50">300</span>
-                                    <img src="images/icon/k.png" alt="">
-                                </h1>
-                            </div>
-                            <div class="title">
-                                <h3>Projet <br> réaliser</h3>
+                    {% for count in counters %}
+                        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="single-fact-counter wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
+                                <div class="count-box">
+                                    <h1>
+                                        <span class="timer" data-from="1" data-to="{{count.number}}" data-speed="5000" data-refresh-interval="50">{{count.number}}</span>
+                                    </h1>
+                                </div>
+                                <div class="title">
+                                    <h3>{{count.name}}</h3>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--End Single Fact Counter-->
-                    <!--Start Single Fact Counter-->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="single-fact-counter wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-                            <div class="count-box">
-                                <h1>
-                                    <span class="timer" data-from="1" data-to="2000" data-speed="5000" data-refresh-interval="50">2000</span>
-                                </h1>
-                            </div>
-                            <div class="title">
-                                <h3>client <br> satisfait</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Fact Counter-->
-                    <!--Start Single Fact Counter-->
-                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                        <div class="single-fact-counter wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-                            <div class="count-box">
-                                <h1>
-                                    <span class="timer" data-from="1" data-to="30" data-speed="5000" data-refresh-interval="50">30</span>
-                                </h1>
-                            </div>
-                            <div class="title">
-                                <h3>Trophés<br> Réçu</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Single Fact Counter-->
+                    {% endfor %}
                 </div>
-
             </div>
         </section>
         <!--End Company Overview Area-->
         <!--Start Why choose Area-->
-        <section class="why-choose-area" style="background-image:url(static/images/parallax-background/why-choose-bg.jpg);">
+        <section class="why-choose-area" style="background-image:url({% static 'images/parallax-background/why-choose-bg.jpg' %});">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="why-choose-title float-left">
                             <div class="sec-title">
-                                <div class="icon"><img src="{% static "images/icon/home-1.png" %}" alt="Awesome Logo"></div>
+                                <div class="icon"><img src="{{business.logo_negatif.url}}" alt="Awesome Logo"></div>
                                 <div class="title">Pourquoi nos clients <br>nous Ont <span> choisit ?</span></div>
                             </div>
                             <ul>
@@ -118,47 +73,22 @@
                                 <li>Toujours à l'écoute de nos clients</li>
                             </ul>
                             <div class="button">
-                                <a class="btn-one" href="#">Demander un devis<span class="flaticon-next"></span></a>
+                                <a class="btn-one" href="{% url 'core:contact' %}">Demander un devis<span class="flaticon-next"></span></a>
                             </div>
                         </div>
                         <div class="why-choose-content float-right">
                             <!--Start Single Box-->
-                            <div class="single-box redbg">
-                                <div class="icon-holder">
-                                    <span class="icon-scheme"></span>
+                            {% for proccess in processes %}
+                                <div {% if forloop.counter == 1 %}class="single-box redbg"{% elif forloop.counter == 2 %}class="single-box whitebg"{% elif forloop.counter == 3 %}class="single-box whitebg"{% elif forloop.counter == 4 %}class="single-box blackbg"{% endif %}>
+                                    <div class="icon-holder">
+                                        <span {% if forloop.counter == 1 %}class="icon-scheme"{% elif forloop.counter == 2 %}class="icon-guarantee-certificate1"{% elif forloop.counter == 3 %}class="icon-hr1"{% elif forloop.counter == 4  %}class="icon-wallet1"{% endif %}></span>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3>Équipe expérimentée</h3>
+                                        <p>Righteous indignations working beguileds all demoralized that blinded our works.</p>
+                                    </div>
                                 </div>
-                                <div class="text-holder">
-                                    <h3>Équipe expérimentée</h3>
-                                    <p>Righteous indignations working beguileds all demoralized that blinded our works.</p>
-                                </div>
-                            </div>
-                            <div class="single-box whitebg">
-                                <div class="icon-holder">
-                                    <span class="icon-guarantee-certificate1"></span>
-                                </div>
-                                <div class="text-holder">
-                                    <h3>sûr et sécuriser à 100%</h3>
-                                    <p>Des avantages qui deviennent des solutions</p>
-                                </div>
-                            </div>
-                            <div class="single-box whitebg">
-                                <div class="icon-holder">
-                                    <span class="icon-hr1"></span>
-                                </div>
-                                <div class="text-holder">
-                                    <h3>Visiter nos références</h3>
-                                    <p>Rejects pleasures to secure other pleasures, endures pains to avoid worse.</p>
-                                </div>
-                            </div>
-                            <div class="single-box blackbg">
-                                <div class="icon-holder">
-                                    <span class="icon-wallet1"></span>
-                                </div>
-                                <div class="text-holder">
-                                    <h3>Distributeur CAME BPT exclusif</h3>
-                                    <p>Une assistance technique et un service après vente assurés à long terme.</p>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

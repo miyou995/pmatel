@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 # Create your views here.
-from .models import Partner, Realisation, Faq
+from .models import Partner,  Faq
 
 class PartnerListView(ListView):
     context_object_name = 'partners'
@@ -10,16 +10,16 @@ class PartnerListView(ListView):
     template_name = "partner.html"
 
 
-class RealisationListView(ListView):
-    context_object_name = 'realisations'
+# class RealisationListView(ListView):
+#     context_object_name = 'realisations'
 
-    model = Realisation
-    template_name = "realisation.html"
+#     model = Realisation
+#     template_name = "realisation.html"
 
 
-class RealisationDetailView(DetailView):
-    model = Realisation
-    template_name = "realisation-detail.html"
+# class RealisationDetailView(DetailView):
+#     model = Realisation
+#     template_name = "realisation-detail.html"
 
 class FAQListView(ListView):
     model = Faq
