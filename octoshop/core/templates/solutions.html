@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!--Start Working Process Area-->
+        <section class="working-process-area">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <p>Visitez nos solutions!</p>
+                    <div class="title">Solutions de construction <span>intelligente</span></div>
+                </div>
+                <div class="row">
+                    {% for solution in solutions %}
+                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                            <a href="{{solution.get_absolute_url}}">
+                                <div class="single-working-process text-center">
+                                    <div class="top-box"><span>0{{forloop.counter}}</span></div>
+                                    <div class="inner">
+                                        <!-- <h3>Idea & Design</h3> -->
+                                        <p>{{solution.name}}</p>
+                                        <div class="icon-holder">
+                                            {% if solution.photo %}
+                                                <img src="{{solution.photo.url}}" alt="{{solution.name}}" width="180">
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <!--End Working Process Area-->
+
+
+{% endblock content %}

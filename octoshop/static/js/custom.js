@@ -506,19 +506,19 @@ function projectCarousel () {
                     items:1
                 },
                 600:{
-                    items:2
+                    items:1
                 },
                 800:{
-                    items:3
+                    items:1
                 },
                 1024:{
-                    items:4
+                    items:2
                 },
                 1100:{
-                    items:4
+                    items:2
                 },
                 1200:{
-                    items:6
+                    items:2
                 }
             }
         });    		
@@ -843,7 +843,7 @@ function projectCarouselv3 () {
                     items:3
                 },
                 1200:{
-                    items:4
+                    items:3
                 }
             }
         });    		

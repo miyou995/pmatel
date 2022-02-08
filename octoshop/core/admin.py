@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.admin.options import InlineModelAdmin
-from .models import ProductType, Product, Category, ContactForm, PhotoProduct , Atribute, AtributesValue, ProductDetail, ProductDocument, Brand, Gamme
+from .models import ProductType, Product, Category, ContactForm, PhotoProduct , Atribute, AtributesValue, ProductDetail, ProductDocument, Brand, Gamme, Solution, SolutionElement, SolutionDocument
 from django.contrib.auth.models import Group, User
 from django.utils.html import format_html
 from django_mptt_admin.admin import DjangoMpttAdmin
@@ -20,6 +20,13 @@ class ProductsInlineAdmin(admin.StackedInline):
 class ProductDetailInline(admin.TabularInline):
     model = ProductDetail
     classes = ['collapse']
+
+class SolutionElementlInline(admin.TabularInline):
+    model = SolutionElement
+
+class SolutionDocumentlInline(admin.TabularInline):
+    model = SolutionDocument
+
 
 class CategorysInline(admin.TabularInline):
     model = Category
@@ -104,9 +111,17 @@ class CategoryAdmin(DjangoMpttAdmin):
     inlines =[CategorysInline, ProductsInlineAdmin]
     
 
+class SolutionAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'actif')
+    prepopulated_fields = {"slug": ("name",)}
+
+    list_display_links = ('id','name')
+    list_editable = [ 'actif']
+
+    inlines = [SolutionElementlInline, SolutionDocumentlInline]# a comenter pour KAHRABACENTER.com
 
 
-    
+ 
 
 # class GammeAdmin(admin.ModelAdmin):
 #     list_display = ('id', 'name')
@@ -139,7 +154,7 @@ class PhotosAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(ContactForm, ContactFormAdmin)
-# admin.site.register(ProductType, ProductTypeAdmin)
+admin.site.register(Solution, SolutionAdmin)
 admin.site.register(Brand, BrandAdmin)
 
 

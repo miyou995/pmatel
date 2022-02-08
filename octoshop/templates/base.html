@@ -20,9 +20,9 @@
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="{% static "css/responsive.css" %}">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{business.logo.url}}">
-    <link rel="icon" type="image/png" href="{{business.logo.url}}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{business.logo.url}}" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static "images/favicon/favicon.png" %}">
+    <link rel="icon" type="image/png" href="{% static "images/favicon/favicon.png" %}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{% static "images/favicon/favicon.png" %}" sizes="16x16">
 
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="keywords" content="branding, digital, design, studio, creative, services,consulting" />
@@ -60,16 +60,15 @@
                 <div class="top-style2-right">
                     <ul class="top-right-menu">
                         <!-- <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> Se connecter</a></li> -->
-                        <li><a href="#">FAQ</a></li>
                         {% comment %}
-                          
-                        <li>
-                            <select id="polyglot-language-options">
-                                <option id="en" value="en" selected>Français</option>
-                                <option id="fr" value="fr">English</option>
-                                <option id="es" value="ar">عربي</option>
-                            </select>
-                        </li>
+                        <li><a href="#">FAQ</a></li>
+                            <li>
+                                <select id="polyglot-language-options">
+                                    <option id="en" value="en" selected>Français</option>
+                                    <option id="fr" value="fr">English</option>
+                                    <option id="es" value="ar">عربي</option>
+                                </select>
+                            </li>
                         {% endcomment %}
                     </ul>
                     <ul class="topbar-social-links">
@@ -86,7 +85,7 @@
             <div class="inner-container clearfix">
                 <div class="logo-box-style2 float-left">
                     <a href="{% url 'core:index' %}">
-                        <img src="{{business.logo.url}}" alt="logo {{business.name}}">
+                        <img src="{{business.logo.url}}" alt="logo {{business.name}}" width="180" >
                     </a>
                 </div>
                 <div class="main-menu-box float-right">
@@ -100,9 +99,9 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="{{index_page}}"> <a href="{% url 'core:index' %}">Home</a></li>
+                                <li class="{{index_page}}"> <a href="{% url 'core:index' %}">Accueil</a></li>
                                 <li class="{{about_page}}"><a href="{% url 'core:about' %}">A propos</a></li>
-                                <li class="dropdown"><a href="{% url 'core:products' %}">Nos catégories</a>
+                                <li class="dropdown"><a href="{% url 'core:products' %}">Produits</a>
                                     <ul>
                                         {% recursetree categories %}
                                             <li {% if node.children.count > 0 %} class="dropdown" {% endif %}>
@@ -119,6 +118,7 @@
                                     </ul>
                                 </li>
                                 <!-- <li class="gauches float-right"><a href="{% url 'core:products'  %}?new=new">Commande rapide</a></li> Commande rapide a faire aprés la finition du site -->
+                                <li class=""><a href="{% url 'core:solutions' %}">Solutions</a></li>
                                 <li class="{{contact_page}}"><a href="{% url 'core:contact' %}">Contact</a></li>
                                 <li class="gauches float-right"><a href="{% url 'core:products'  %}?new=new">Nouveautés</a></li>
                             </ul>
@@ -138,9 +138,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="cart-box" id="hm-minicart">
-                            {% include "snippets/cart-count.html" %}
-                        </div>
+                       
                         <!-- <div class="button">
                             <a class="btn-one" href="#">Devis rapide<span class="flaticon-next"></span></a>
                         </div> -->
@@ -162,7 +160,7 @@
                             <div class="our-info-box">
                                 <div class="footer-logo">
                                     <a href="{% url 'core:index' %}">
-                                        <img src="{{business.logo_negatif.url}}" alt="Awesome Logo">
+                                        <img src="{{business.logo_negatif.url}}" alt="Awesome Logo" width="250">
                                     </a>
                                 </div>
                                 <div class="text">

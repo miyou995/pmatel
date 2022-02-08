@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+        <!--Start Single Post Info Area-->
+        <section class="single-post-info-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="single-post-info-content text-center">
+                          
+                            <h1 class="blog-title">{{solution.name}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Single Post Info Area-->
+
+        <!--Start blog single area-->
+        {% if solution.slug == "solutions-commerciales-et-publiques" %}
+          
+        <section id="blog-area" class="blog-single-area">
+            <div class="container">
+                <div class="blog-post">
+                    <div class="single-blog-post">
+                        <div class="top-text-box">
+                            <p>Nous représentons l'ingénierie de notre pays et les qualités INTERRA sur les marchés nationaux et étrangers avec des projets spéciaux tels que des projets commerciaux, publics, universitaires, des installations de haute sécurité, etc.</p>
+                            <p>Nos solutions, capables de s'autogérer, de réduire les coûts d'énergie et de maintenance, offrent de nombreux avantages dans les intégrations tertiaires et publiques.</p>
+                        </div>
+                        <div class="quote-bottom-text">
+                            <p>L'utilisation du système d'automatisation du bâtiment est devenue une nécessité pour une communication saine et économique dans les bâtiments où les systèmes techniques sont dispersés. Les systèmes mécaniques et électriques d'un bâtiment représentent une part considérable du coût total du bâtiment. Ces systèmes fournissent des services tels que le chauffage, le refroidissement, la climatisation, l'éclairage (ascenseurs, escaliers mécaniques, etc.). L'exploitation et la maintenance de ces systèmes nécessitent beaucoup plus que les autres services du bâtiment. C'est pourquoi les propriétaires et les gestionnaires d'immeubles doivent trouver des méthodes de contrôle qui permettront à ces systèmes de fonctionner de manière plus efficace et efficiente. Ceci est plus important dans les grandes agglomérations étendues telles que les sièges sociaux, les aéroports, les hôpitaux, les universités et les usines.</p>
+                        </div>
+                        <div class="blog-single-bottom-content-box">
+                            <div class="text-box">
+                                <h3 class="my-4">Nos solutions de projets commerciaux et publics font également partie de notre philosophie de base</h3>
+
+                                <ul class="ml-5">
+                                    <li>Bâtiments autogérés</li>
+                                    <li>Bureaux</li>
+                                    <li>Fournir un éclairage complet, respectueux de l'environnement et adéquat.</li>
+                                    <li>Contrôles spéciaux et limites</li>
+                                    <li>Économie d'énergie</li>
+                                    <li>Bureau - Hôpital</li>
+                                    <li>École - Bâtiments publics</li>
+                                </ul>
+                                <h3 class="my-4">Solution INTERRA pour un environnement de travail optimal</h3>
+                                <ul class="ml-5">
+                                    <li>Éclairage selon l'environnement; notre solution d'automatisation détecte la valeur lumineuse ambiante et détermine la valeur lumineuse des lampes.</li>
+                                    <li> Des changements lents et réguliers de lumière et de température sont effectués dans le bâtiment en suivant le soleil, le vent et d'autres environnements à l'extérieur du bâtiment avec des capteurs L'environnement de travail le plus favorable est créé dans le bâtiment</li>
+                                    <li>Un système fiable</li>
+
+                                    <li> Les systèmes d'automatisation jouent un rôle important dans le contrôle de la consommation des centres de gestion des bâtiments, des bureaux de gestion des installations.
+                                        Économie d'énergie</li>
+                                    <li> Système autogéré Sécurise L'intégration</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blog-single-bottom-content-box">
+                            <p>Une caractéristique importante des futurs bâtiments consiste à communiquer avec les autres systèmes du bâtiment sur la plate-forme commune et à surveiller depuis le centre où les contrôles sont effectués.</p>
+                            <h2>NOS SOLUTIONS QUI PEUVENT S'AUTO-GÉRER ET RÉDUIRE LES COÛTS D'ÉNERGIE ET DE MAINTENANCE OFFRENT DE NOMBREUX AVANTAGES DANS LES INTÉGRATIONS DE BUREAUX ET PUBLIQUES.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% else %}
+        <section class="project-description-area">
+            <div class="pattern-bg wow slideInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
+                <img src="{% static "images/icon/project-description-pattern.jpg" %}" alt="Pattern Bg">
+            </div>
+            <div class="container">
+                {% for item in solution.elements.all %}
+                    <div class="row {% if forloop.counter|divisibleby:2 %}flex-row-reverse{% endif %}">
+                        {% if item.photo %}
+                            <div class="col-xl-4">
+                                <div class="project-description-image-box">
+                                        <img src="{{item.photo.url}}" alt="Awesome Image">
+                                    </div>
+                                </div>
+                        {% endif %}
+                        <div class="col-xl-8">
+                            <div class="project-description-content">
+                                <div class="sec-title">
+                                    <div class="title">{{item.name}}</div>
+                                </div>
+                                <div class="inner-content">
+                                    <p>{{item.description}}</p>
+                                    <div class="bottpm-text">
+                                        <p>Because those who do not know how pursue, Complete account that all system, expound the actual teachings of the great explorer of the truth,</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <!--End Project Description area-->
+        {% endif %}
+
+{% endblock content %}

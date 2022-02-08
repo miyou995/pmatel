@@ -50,8 +50,8 @@ class Business(models.Model):
 
 class Slide(models.Model):
     photo      = models.ImageField(verbose_name="Slide 870 X 475 px", upload_to='slides/', )
-    title      = models.CharField(verbose_name="Grand titre de la photo", max_length=50, blank=True, null=True) 
-    sub_title  = models.CharField(verbose_name="Sous titre de la photo", max_length=50, blank=True, null=True) 
+    title      = models.CharField(verbose_name="Grand titre de la photo", max_length=150, blank=True, null=True) 
+    sub_title  = models.CharField(verbose_name="Sous titre de la photo", max_length=150, blank=True, null=True) 
     url        = models.URLField(verbose_name="Lien", max_length=250)
     actif  = models.BooleanField(verbose_name='actif', default=True)
     objects = ActiveManager()
@@ -115,7 +115,7 @@ class LargeBanner(models.Model):
 
 class Counter(models.Model):
     name    = models.CharField(verbose_name="nom de l'acomplissement", max_length=150) 
-    number  = models.IntegerField(verbose_name="chiffre") 
+    number  = models.IntegerField(verbose_name="chiffre",default=0) 
     actif  = models.BooleanField(verbose_name='actif', default=True)
     objects = ActiveManager()
 

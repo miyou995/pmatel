@@ -1,42 +1,41 @@
 {% load static %}
-    <div class="shop-content" id="removed-products">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="showing-result-shorting">
+<div class="shop-content" id="removed-products">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="showing-result-shorting">
 
-                    <!-- <div class="shorting">
-                        <select class="selectmenu" hx-get="{% url 'core:filtered-products' %}" hx-target="#removed-products" hx-swap="outerHTML">
-                            <option selected="selected">Trier par</option>
-                            <option name="sort_by">Default Sorting one</option>
-                            <option name="sort_by">Default Sorting Two</option>
-                            <option name="sort_by">Default Sorting Three</option>
-                        </select>
-                    </div> -->
+                <!-- <div class="shorting">
+                    <select class="selectmenu" hx-get="{% url 'core:filtered-products' %}" hx-target="#removed-products" hx-swap="outerHTML">
+                        <option selected="selected">Trier par</option>
+                        <option name="sort_by">Default Sorting one</option>
+                        <option name="sort_by">Default Sorting Two</option>
+                        <option name="sort_by">Default Sorting Three</option>
+                    </select>
+                </div> -->
 
-                    <div class="showing">
-                        <p>Showing 1-9 of 35 results</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            {% for product in products %}
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
-                    {% include "snippets/product-block.html" %}
-                </div>
-            {% empty %}
-                <h2>Aucun produit trouver</h2>
-            {% endfor %}
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="post-pagination text-center">
-                    <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
-                </ul>
+                <!-- <div class="showing">
+                    <p>Showing 1-9 of 35 results</p>
+                </div> -->
             </div>
         </div>
     </div>
+    <div class="row">
+        {% for product in products %}
+            <div class="col-12">
+                {% include "snippets/product-block.html" %}
+            </div>
+        {% empty %}
+            <h2>Aucun produit trouver</h2>
+        {% endfor %}
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <ul class="post-pagination text-center">
+                <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div> -->
+</div>

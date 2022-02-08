@@ -113,10 +113,10 @@
                         <div class="about-style2-image-box">
                             <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                             <div class="image">
-                                <img src="{% static "images/resources/about-style2-image.jpg" %}" alt="Awesome Image">
+                                <img src="{% static "images/about.jpg" %}" alt="About pmatel">
                                 <div class="overlay-box">
                                     <div class="title">
-                                        <h1>27 <span>ans d'éxperiance<br>sur le marché</span></h1>
+                                        <h1>27 <span>ans d'éxperience<br>sur le marché</span></h1>
                                     </div>
                                     <div class="button">
                                         <a href="#"><span class="icon-back"></span></a>
@@ -136,18 +136,25 @@
             <div class="container-fluid latest-projects-v3">
                 <div class="row">
                     <div class="col-xl-12">
+                        <div class="sec-title float-left">
+                            <div class="title text-light">Découverez nos  <span> Solution</span></div>
+                        </div>
+                    </div> 
+                    <div class="col-xl-12">
                         <div class="project-carousel-v3 owl-carousel owl-theme">
                             
-                            {% for promo in promotions %}
-                                <div class="single-project-style3">
-                                    <div class="img-holder">
-                                        <a href="{{promo.url}}">
-                                            <img src="{{promo.photo.url}}" alt="Awesome Image">
-                                            <div class="overlay-content">
-                                            </div>
-                                        </a>
+                            {% for solution in solutions %}
+                                {% if solution.home_image %}
+                                    <div class="single-project-style3">
+                                        <div class="img-holder">
+                                            <a href="{{solution.get_absolute_url}}">
+                                                <img src="{{solution.home_image.url}}" alt="Awesome Image">
+                                                <div class="overlay-content">
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
+                                {% endif %}
                             {% endfor %}
                         </div>
                     </div>
@@ -170,42 +177,8 @@
             <div class="container-fluid">
                 <div class="project-carousel owl-carousel owl-theme">
                     {% for product in new_products %}
-                        <div class="single-project-style1" style="max-height: 470px;">
-                            <div class="product-item men" style="max-height: 470px;">
-                                <div class="product discount product_filter">
-                                    <div class="product_image">
-                                        <a href="{{product.get_absolute_url}}">
-                                            <img 
-                                            {% if product.photos.all.0 %}
-                                                src="{{product.photos.all.0.fichier.url}}" alt="{{product.name}}" style="max-height: 225px;width: auto;">
-                                            {% else %}
-                                                src="{% static "images/pas-images.png" %}" alt="Pas de photo pour le moment"style="max-height: 225px;width: auto;">
-                                            {% endif %}
-                                        </a>
-                                    </div>
-                                    <div class="favorite favorite_left"></div>
-                                    {% if product.promo %}
-                                        <div class="product_bubble product_bubble_right product_bubble_red d-flex flex-column align-items-center"><span>{{product.promo}}%</span></div>
-                                    {% endif %}
-                                    <div class="product_info mt-3">
-                                        {% if product.gamme %}
-                                            <a class="d-block" href="{{product.gamme.get_absolute_url}}" style="color: #333;text-decoration: none; text-align: left;">{{product.gamme}}</a>
-                                        {% else %}
-                                            <br>
-                                        {% endif %}
-                                        {% if product.reference %}
-                                            <a class="d-block" href="{{product.get_absolute_url}}" style="color: #333;text-decoration: none; text-align: left;">Réf:{{product.reference}}</a>
-                                        {% else %}
-                                            <br>
-                                        {% endif %}
-                                    <hr class="m-0">
-                                        <p class="product_name m-0" ><a href="{{product.get_absolute_url}}">{{product.name|truncatewords:8}}</a> </p>
-                                        <div class="product_price ">{{product.price}} DA {% if product.old_price %}<span>{{product.old_price}}</span>{% endif %}</div>
-                                    </div>
-                                </div>
-                                <div class="red_button add_to_cart_button"><a class="text-light" hx-post="{% url 'cart:cart_one_add' product.id %}" hx-target="#hm-minicart" hx-swap="innerHTML" >ajouter au panier</a></div>
-                            </div>
-                        </div>
+                    {% include "snippets/product-block.html" %}
+
                     {% endfor %}
                 </div>
             </div>

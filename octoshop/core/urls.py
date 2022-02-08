@@ -1,6 +1,6 @@
 
 from django.urls import path, re_path
-from .views import IndexView, AboutView, ContactView,  ProductsView, ProductsView, ProductDetailView, VirementBancaireView, CarteBancaireView ,PaiementView ,PaiementEspecesView ,EchangeView ,LivraisonView ,RetourView,  product_detail, filtred_htmx_products
+from .views import IndexView, AboutView, ContactView,  ProductsView, ProductsView, ProductDetailView, SolutionListView, VirementBancaireView, CarteBancaireView ,PaiementView ,PaiementEspecesView ,EchangeView ,LivraisonView ,RetourView,  product_detail, filtred_htmx_products, SolutionDetailView
 
 app_name = 'core'
 
@@ -30,5 +30,8 @@ urlpatterns = [
     path('echange/', EchangeView.as_view(), name='echange'),
     path('livraison/', LivraisonView.as_view(), name='livraison'),
     path('retour/', RetourView.as_view(), name='retour'),
+    path('solutions/', SolutionListView.as_view(), name='solutions'),
+    path('solutions/<slug:slug>', SolutionDetailView.as_view(), name='solution-detail'),
+
 
 ]

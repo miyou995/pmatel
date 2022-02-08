@@ -5,7 +5,7 @@ from django.http import JsonResponse, request
 from .forms import ContactForm
 from delivery.models import Wilaya, Commune
 from django.views.generic import TemplateView, DetailView, ListView, CreateView, View
-from .models import Brand, Gamme, Product, Category
+from .models import Brand, Gamme, Product, Category, Solution
 from business.models import Business, ThreePhotos, Slide, Counter, LargeBanner,ClientService, Partner
 from cart.forms import CartAddProductForm
 from business.models import Counter
@@ -15,6 +15,7 @@ from django.template.loader import render_to_string
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from cart.forms import CartAddProductForm
 from django.db.models import F
+
 class IndexView(TemplateView):
     template_name = "index.html"
 
@@ -23,7 +24,7 @@ class IndexView(TemplateView):
         context["new_products"] = Product.objects.filter(top=True, new=True, actif=True)
         context["top_products"] = Product.objects.filter(top=True, actif=True)
         context["big_slides"]   = Slide.objects.filter(actif=True)
-        context["promotions"]   = ThreePhotos.objects.all()[:3]
+        context["solutions"]   = Solution.objects.all()[:3]
         # context["dual_banners"] = DualBanner.objects.all()[:2]
         context["large_banner"] = LargeBanner.objects.last()
         context["random_cat"]   = Category.objects.all()
@@ -70,6 +71,14 @@ class LivraisonView(TemplateView):
 class RetourView(TemplateView):
     template_name = "livraison/retours.html"
 
+class SolutionListView(ListView):
+    template_name = "solutions.html"
+    context_object_name = 'solutions'
+    model = Solution
+
+class SolutionDetailView(DetailView):
+    template_name = "solution-detail.html"
+    model = Solution
 
 def product_detail(request):
     product = Product.objects.get(id=Product.objects.first().id)
@@ -157,7 +166,7 @@ class ProductDetailView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         random_related = Product.objects.filter(actif=True).order_by('?')[:4] 
-        context["wilayas"] = Wilaya.objects.filter(actif=True).order_by('name') 
+        context["wilayas"] = Wilaya.objects.filter(active=True).order_by('name') 
         prod = self.get_object()
         print('le produit', prod)
         category = prod.category

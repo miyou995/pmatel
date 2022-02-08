@@ -166,7 +166,32 @@ class Product(models.Model):
     def get_absolute_url(self):
         return reverse("core:productDetail", args=[self.slug])
 
+    @property
+    def first_image(self):
+        image = None
+        try:
+            image = self.photos.first().fichier.url
+        except:
+            pass
+        return image
 
+    @property
+    def last_image(self):
+        image = None
+        try:
+            if self.photos.count() > 1:
+                image = self.photos.last().fichier.url
+        except:
+            pass
+        return image
+    @property
+    def first_doc(self):
+        image = None
+        try:
+            image = self.documents.first().file.url
+        except:
+            pass
+        return image
 class ProductDetail(models.Model):
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="specifications")
     key =   value = models.CharField(verbose_name=_("Carectéristique"),help_text=_("Atribute Value(maximum of 255 words"),max_length=255,)
@@ -224,3 +249,39 @@ class ContactForm(models.Model):
         ordering = ('id',)
         verbose_name = 'Formulaire de contact'
         verbose_name_plural = 'Formulaire de contact'
+
+
+class Solution(models.Model):
+    name = models.CharField(verbose_name="Nom / titre", max_length=250)
+    photo   = models.ImageField(upload_to='icon',blank=True, null=True) 
+    home_image= models.ImageField(upload_to='icon',blank=True, null=True) 
+    slug = models.SlugField( max_length=150, unique= True, verbose_name='URL')
+    description = models.TextField(verbose_name="Description", blank=True, null=True)
+    actif   = models.BooleanField(verbose_name='actif', default=True)
+    created = models.DateTimeField(verbose_name='Date de Création', auto_now_add=True)
+    updated = models.DateTimeField(verbose_name='Date de dernière mise à jour', auto_now=True)
+    
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("core:solution-detail", kwargs={"slug": self.slug})
+    
+
+class SolutionElement(models.Model):
+
+    name = models.CharField(verbose_name="Nom / titre", max_length=250)
+    photo   = models.ImageField(upload_to='images/solutions') 
+    solution = models.ForeignKey(Solution, related_name="elements", on_delete=models.CASCADE)
+    description = models.TextField(verbose_name="Description", blank=True, null=True)
+    actif   = models.BooleanField(verbose_name='actif', default=True)
+
+    created = models.DateTimeField(verbose_name='Date de Création', auto_now_add=True)
+    updated = models.DateTimeField(verbose_name='Date de dernière mise à jour', auto_now=True)
+
+class SolutionDocument(models.Model):
+    file    = models.FileField(upload_to='images/produits') 
+    name    = models.CharField(verbose_name=_("Nom du document") , max_length=25)
+    actif   = models.BooleanField(verbose_name='actif', default=True)
+    solution = models.ForeignKey(Solution, related_name="documents", on_delete=models.CASCADE)
