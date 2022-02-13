@@ -95,6 +95,13 @@ class Category(MPTTModel):
     def get_absolute_url(self):
         return f"/produits/?category={self.id}"
 
+    @property
+    def has_products(self):
+        products = Product.objects.filter(category__in=self.get_descendants(include_self=True), actif=True)
+        if products:
+            return True
+        else: 
+            return False
 
 class ProductType(models.Model):
     """

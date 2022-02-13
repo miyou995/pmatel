@@ -85,68 +85,131 @@ def product_detail(request):
     return render(request, 'snipetts/product-modal.html', {'product': product})
 
 
-class ProductsView(ListView):
-    context_object_name = 'products'
-    model = Product
-    template_name = "products.html"
-    paginate_by = 24
-    def get_queryset(self):
-        try:
-            param = self.request.GET.get('search')
-            # print('category', param)
-            if param == 'all':
-                category = Category.objects.filter(actif=True)
-                products = Product.objects.filter(actif=True)
+# class ProductsView(ListView):
+#     context_object_name = 'products'
+#     model = Product
+#     template_name = "products.html"
+#     paginate_by = 24
+#     def get_queryset(self):
+#         try:
+#             param = self.request.GET.get('search')
+#             # print('category', param)
+#             if param == 'all':
+#                 category = Category.objects.filter(actif=True)
+#                 products = Product.objects.filter(actif=True)
             
-            elif param is None:
-                category = Category.objects.filter(actif=True)
-                products = Product.objects.filter(actif=True)
-            else:
-                category = Category.objects.get(id = param)
-                products = Product.objects.filter(category__in=category.get_descendants(include_self=True))
-        except:
-            try:
-                new = self.request.GET.get('new')
-                if new == 'new':
-                    products = Product.objects.filter(new=True, actif=True)
-                elif new == 'promo':
-                    products = Product.objects.filter(old_price=True, actif=True)
-                else:
-                    pass
-            except:
-                category = Category.objects.filter(actif=True)
-                products = Product.objects.filter(actif=True)
-        query = self.request.GET.get('name')
-        if query:
-            # print('query', query)
-            qs = products.search(query=query)
-            # print('les produits ')
-        else:
-            # print('les ELSEEEE ', products)
-            qs = products
-        return qs
-        # except:
-        #     print(' kamel les produits kharjou :) excepty !!!')
-        #     return super().get_queryset() 
+#             elif param is None:
+#                 category = Category.objects.filter(actif=True)
+#                 products = Product.objects.filter(actif=True)
+#             else:
+#                 category = Category.objects.get(id = param)
+#                 products = Product.objects.filter(category__in=category.get_descendants(include_self=True))
+#         except:
+#             try:
+#                 new = self.request.GET.get('new')
+#                 if new == 'new':
+#                     products = Product.objects.filter(new=True, actif=True)
+#                 elif new == 'promo':
+#                     products = Product.objects.filter(old_price=True, actif=True)
+#                 else:
+#                     pass
+#             except:
+#                 category = Category.objects.filter(actif=True)
+#                 products = Product.objects.filter(actif=True)
+#         query = self.request.GET.get('name')
+#         if query:
+#             # print('query', query)
+#             qs = products.search(query=query)
+#             # print('les produits ')
+#         else:
+#             # print('les ELSEEEE ', products)
+#             qs = products
+#         return qs
+#         # except:
+#         #     print(' kamel les produits kharjou :) excepty !!!')
+#         #     return super().get_queryset() 
         
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        if self.request.GET.get('category'):
-            try:
-                category = self.request.GET.get('category')
-                if category == 'all':                
-                    context["category"] = Category.objects.filter(actif=True)
-                else:                
-                    context["category"] = Category.objects.get(id = category)
-            except:
-                pass
-        context["brands"] = Brand.objects.filter(actif=True)
-        gammes = Gamme.objects.filter(actif=True).exclude(name=F('brand__name'))
-        context["gammes"] = gammes
-        # context["filters"] = ProductFilter(self.request.GET, queryset= self.get_queryset())
-        # context["products"] = Product.objects.all()
-        return context
+#     def get_context_data(self, **kwargs):
+#         context = super().get_context_data(**kwargs)
+#         if self.request.GET.get('category'):
+#             try:
+#                 category = self.request.GET.get('category')
+#                 if category == 'all':                
+#                     context["category"] = Category.objects.filter(actif=True)
+#                 else:                
+#                     context["category"] = Category.objects.get(id = category)
+#             except:
+#                 pass
+#         context["brands"] = Brand.objects.filter(actif=True)
+#         gammes = Gamme.objects.filter(actif=True).exclude(name=F('brand__name'))
+#         context["gammes"] = gammes
+#         # context["filters"] = ProductFilter(self.request.GET, queryset= self.get_queryset())
+#         # context["products"] = Product.objects.all()
+#         return context
 
+
+
+
+def products_view(request):
+    context = {}
+    context['category_filter'] = True
+    context['product_categories'] = Category.objects.filter(actif=True)
+    
+    category = Category.objects.filter(actif=True)
+    products = Product.objects.filter(actif=True)
+    category_param = request.GET.get('category')
+    brand_param = request.GET.get('brand')
+    new_param = request.GET.get('new')
+    promo_param = request.GET.get('promo')
+    pack_param = request.GET.get('packs')
+
+    if category_param :
+        if category_param != 'all':
+            context['category_filter'] = False
+            category = Category.objects.get(id = category_param)
+            products = Product.objects.filter(category__in=category.get_descendants(include_self=True), actif=True)
+    if new_param:
+        products = Product.objects.filter(new=True, actif=True)
+    elif promo_param:
+        products = Product.objects.filter(old_price__isnull=False, actif=True)
+    elif pack_param:
+        products = Product.objects.filter(is_pack=True, actif=True)
+    elif brand_param:
+        try:
+            products = Product.objects.filter(actif=True, brand__id=brand_param)
+        except:
+            products = Product.objects.filter(actif=True, brand__name__iexact=brand_param)
+        context['category_filter'] = False
+        # context['product_categories'] = Category.objects.filter(actif=True, products__brand=brand_param)
+        print('les produits d la marque ', products)
+    else:
+        pass
+    # print('request', request.GET)
+    products_qs = products
+    if request.GET.get('query'):
+        products = ProductFilter(request.GET, queryset= Product.objects.all())
+        products_qs = products.qs
+        print('le cash ', request.GET)
+    # context['products'] = products.qs[:30]
+    context['filter'] = products
+    context["category"] = category
+    paginator = Paginator(products_qs, 15)
+    page = request.GET.get('page')
+    print('params => ', request.GET.copy())
+    get_copy = request.GET.copy()
+    try:
+        context['products'] = paginator.page(page)
+    except PageNotAnInteger:
+        context['products'] = paginator.page(1)
+    except EmptyPage:
+        context['products'] = paginator.page(paginator.num_pages)
+    parameters = get_copy.pop('page', True) and get_copy.urlencode()
+    context['parameters'] = parameters
+    print('la cateogrie', category)
+
+    if request.htmx:
+        return render(request, 'snippets/htmx-products.html', context)
+    return render(request, 'products.html', context)
 
 def filtred_htmx_products(request):
     context = {}

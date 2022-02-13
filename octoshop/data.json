@@ -1,0 +1,5353 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-09-25T15:12:12.094Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-09-25T15:14:20.444Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-09-27T08:02:27.505Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "CÂBLE ET ACCESOIRES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-09-27T08:03:28.606Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Appareillage",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-09-27T08:03:32.987Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Protection résidentielle",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-09-27T08:03:44.749Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "MODULAIRE & DISTRIBUTION",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-09-27T08:03:48.852Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Vidéophonie et Interphonie",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-09-27T08:03:52.784Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "PROTECTION DE PUISSANCE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-09-27T08:03:57.980Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Disjoncteurs de puissance DPX³",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-09-27T08:04:18.025Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "SYSTÈMES DE GOULOTTES, DE COLONNES ET DE SOL",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-09-27T08:04:33.072Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "9",
+        "object_repr": "SYSTÈMES DE CHEMINS DE CÂBLES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-09-27T08:04:36.505Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "10",
+        "object_repr": "SMART HOME & BUILDING",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-09-27T08:04:51.736Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "ACCESSOIRES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-09-27T08:05:18.056Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Boite d'encastrement",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-09-27T08:05:24.632Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Appareillage BTicino",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-09-27T08:05:39.800Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "14",
+        "object_repr": "Boîte et Coffret",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-09-27T08:05:54.036Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "15",
+        "object_repr": "Disjoncteur Modulaire",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-09-27T08:06:07.448Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "16",
+        "object_repr": "Disjoncteur et interrupteur différentiel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-09-27T08:06:23.579Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "17",
+        "object_repr": "Cache Borne",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-09-27T08:07:30.438Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "18",
+        "object_repr": "Boîte",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-09-27T08:07:45.998Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "19",
+        "object_repr": "Coffrets",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-09-27T08:07:55.151Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "20",
+        "object_repr": "Boîtes d'encastrement",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-09-27T08:08:03.231Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "21",
+        "object_repr": "Boîtes de dérivation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-09-27T08:19:54.900Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "22",
+        "object_repr": "Disjoncteurs modulaires",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-09-27T08:20:01.954Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "23",
+        "object_repr": "Disjoncteurs de branchement",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2021-09-27T08:20:08.804Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "24",
+        "object_repr": "Interrupteurs différentiels",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2021-09-27T08:20:18.053Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "25",
+        "object_repr": "Blocs différentiels",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-09-27T08:20:24.836Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "26",
+        "object_repr": "Contacteurs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2021-09-27T08:20:36.340Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "27",
+        "object_repr": "Minuteries",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2021-09-27T08:20:50.106Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "28",
+        "object_repr": "Interrupteurs horaires",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2021-09-27T08:20:55.879Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "29",
+        "object_repr": "Transformateurs et alimentations",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2021-09-27T08:22:58.114Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "30",
+        "object_repr": "Prises électriques modulaires",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2021-09-27T08:23:16.379Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "31",
+        "object_repr": "Vidéophonie",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2021-09-27T08:23:25.506Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "32",
+        "object_repr": "Interphonie",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2021-09-27T10:30:07.423Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "ACCESSOIRES",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2021-09-27T10:31:00.736Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Appareillage et contrôle du bâtiment",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2021-09-27T10:31:02.971Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Appareillage et contrôle du bâtiment",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2021-09-27T10:31:39.133Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Automatisme du bâtiment",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2021-09-27T10:31:53.616Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Automatisme du bâtiment",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2021-09-27T10:32:35.490Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "33",
+        "object_repr": "Boite d'encastrement et de dérivation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2021-09-27T10:32:51.207Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "34",
+        "object_repr": "Connexion et fixation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2021-09-27T10:35:29.540Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Automatisme du bâtiment",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2021-09-27T10:35:44.472Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "35",
+        "object_repr": "Produits accessoires du bâtiment",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2021-09-27T10:36:05.472Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "12",
+        "object_repr": "Automatisme du bâtiment",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2021-09-27T10:39:43.926Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "36",
+        "object_repr": "Interrupteur crépusculaire",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2021-09-27T10:57:01.734Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "9",
+        "object_repr": "SYSTÈMES DE CHEMINS DE CÂBLES",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2021-09-27T10:57:14.764Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Disjoncteurs de puissance DPX³",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2021-09-27T10:57:36.165Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "PROTECTION DE PUISSANCE",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2021-09-27T10:57:50.706Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "SYSTÈMES DE GOULOTTES, DE COLONNES ET DE SOL",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2021-09-27T10:58:01.565Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "MODULAIRE & DISTRIBUTION",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2021-09-27T10:58:22.424Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Fils et Câbles",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2021-09-27T11:00:21.076Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Protection résidentielle",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2021-09-27T11:01:03.456Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "10",
+        "object_repr": "SMART HOME & BUILDING",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2021-09-27T11:02:39.144Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "37",
+        "object_repr": "Distribution et gestion de l'énergie",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2021-09-27T11:03:25.836Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "38",
+        "object_repr": "Eclairage",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2021-09-27T11:07:26.318Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "37",
+        "object_repr": "Distribution et gestion de l'énergie",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Production d'\\u00e9nergie\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Distribution et protection de l'\\u00e9nergie\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Commande modulaire\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Coffret et enveloppe\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2021-09-27T11:08:21.649Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Fils et Câbles",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"C\\u00e2ble d'alimentation en \\u00e9nergie\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"C\\u00e2ble r\\u00e9seau local\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"C\\u00e2ble et fil domestique\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"C\\u00e2ble de s\\u00e9curit\\u00e9\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Conducteur nu\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"C\\u00e2ble de manutention et pour l\\u0092industrie\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"C\\u00e2ble de production et distribution d'\\u00e9nergie\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2021-09-27T11:10:06.130Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "38",
+        "object_repr": "Eclairage",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Sources\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Luminaire d'int\\u00e9rieur fonctionnel\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Luminaire d'interieur d\\u00e9coratif\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"luminaire d'ext\\u00e9rieur\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage \\u00e9clairage\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2021-09-27T11:11:38.382Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "55",
+        "object_repr": "Produits Industriels",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Commande et protection moteur\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Boite coffret et armoire\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Automatisme programmable\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Accessoires de c\\u00e2blage et rep\\u00e9rage\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Connectique et raccordement\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Commande et signalisation\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"D\\u00e9tection et capteur\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Transformateur et alimentation\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"S\\u00e9curit\\u00e9 machine\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Protection fusible\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Mesure r\\u00e9gulation instrumentation\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2021-09-27T12:45:24.777Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "67",
+        "object_repr": "dfbvfdbf",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2021-09-27T12:46:52.321Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "67",
+        "object_repr": "dfbvfdbf",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"Prise RJ45 cat\\u00e9gorie6 FTP Mosaic 2 modules - Blanc\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2021-09-27T12:48:18.567Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "67",
+        "object_repr": "dfbvfdbf",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (1)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2021-09-27T12:48:35.916Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "67",
+        "object_repr": "dfbvfdbf",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (2)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2021-09-27T12:51:13.779Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Automatisme du bâtiment",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"Telerupteur 10A Radio Power\"}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (3)\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"Radio power\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"85365005\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2021-09-27T12:51:27.206Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "67",
+        "object_repr": "dfbvfdbf",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2021-09-27T13:06:44.647Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "13",
+        "object_repr": "Automatisme du bâtiment",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2021-09-27T13:38:28.281Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Appareillage et contrôle du bâtiment",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage terminal\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2021-09-27T13:40:36.200Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "68",
+        "object_repr": "Appareillage terminal",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage composable tertiaire 45x45\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage composable entr\\u00e9e de gamme\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage \\u00e9tanche sup. IP55\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage \\u00e9conomique\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage saillie\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage composable haut de gamme\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Appareillage anti vandale\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2021-09-27T13:42:27.462Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "LEGRAND",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"- Gamme\", \"object\": \"Mosaic\"}}, {\"added\": {\"name\": \"- Gamme\", \"object\": \"C\\u00e9liane\"}}, {\"added\": {\"name\": \"- Gamme\", \"object\": \"Soliroc\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2021-09-27T13:43:55.566Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "SCHNEIDER ELECTRIC",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"- Gamme\", \"object\": \"Odace\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2021-09-27T13:48:46.282Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "75",
+        "object_repr": "Appareillage anti vandale",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"Support \\u00e0 vis pour Mosaic , C\\u00e9liane ou Soliroc pour 1 poste ou 2 modules\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2021-09-27T19:25:22.294Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "76",
+        "object_repr": "Douille",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2021-09-27T19:29:00.666Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "Douille et fiche DCL E27 2P+T",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"85369010\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"1\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"E27\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"non\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"blanc\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"autre\"}}, {\"added\": {\"name\": \"product document\", \"object\": \"ProductDocument object (1)\"}}, {\"added\": {\"name\": \"product document\", \"object\": \"ProductDocument object (2)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2021-09-27T19:37:20.626Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "Prise 2P+T Surface Mosaic 2 modules avec connexion bornes automatiques - blanc",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (4)\"}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (5)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2021-09-27T19:38:55.087Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "Prise 2P+T Surface Mosaic 2 modules avec connexion bornes automatiques - blanc",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit Details\", \"object\": \"IP41\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"sans alimentation sp\\u00e9ciale\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"Non\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"plastique\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"fixation par encliquetage\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"Non\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"sans\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"9003\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"IK04\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"Non\"}}, {\"added\": {\"name\": \"Produit Details\", \"object\": \"brillant\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2021-09-27T19:39:32.295Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Telerupteur 10A Radio Power",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2021-09-27T19:39:32.376Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "Support à vis pour Mosaic , Céliane ou Soliroc pour 1 poste ou 2 modules",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2021-09-28T12:34:45.707Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "48",
+        "object_repr": "Câble de manutention et pour l'industrie",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2021-09-30T07:36:22.588Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "Support à vis pour Mosaic , Céliane ou Soliroc pour 1 poste ou 2 modules",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (6)\"}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (7)\"}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (8)\"}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (9)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2021-09-30T08:12:56.723Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Titre\", \"Email de l'entreprise\", \"Num\\u00e9ro de t\\u00e9l\\u00e9phone de l'entreprise\", \"Text a propos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2021-09-30T09:23:01.070Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Telerupteur 10A Radio Power",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2021-10-03T08:14:15.320Z",
+        "user": 1,
+        "content_type": 24,
+        "object_id": "1",
+        "object_repr": "Slide object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2021-10-03T08:15:11.401Z",
+        "user": 1,
+        "content_type": 24,
+        "object_id": "2",
+        "object_repr": "Slide object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2021-10-03T09:13:08.375Z",
+        "user": 1,
+        "content_type": 24,
+        "object_id": "2",
+        "object_repr": "Slide object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Slide 870 X 475 px\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2021-10-03T12:15:40.105Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Text a propos\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2021-10-03T12:19:43.353Z",
+        "user": 1,
+        "content_type": 32,
+        "object_id": "1",
+        "object_repr": "ThreePhotos object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2021-10-03T12:19:50.190Z",
+        "user": 1,
+        "content_type": 32,
+        "object_id": "2",
+        "object_repr": "ThreePhotos object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2021-10-03T12:19:56.912Z",
+        "user": 1,
+        "content_type": 32,
+        "object_id": "3",
+        "object_repr": "ThreePhotos object (3)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2021-10-03T12:20:04.514Z",
+        "user": 1,
+        "content_type": 32,
+        "object_id": "4",
+        "object_repr": "ThreePhotos object (4)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2021-10-03T12:28:22.787Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Lien page Facebook\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2021-10-03T13:48:10.137Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo A propos 440 X 275 px\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2021-10-05T12:40:14.345Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "1",
+        "object_repr": "alger",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2021-10-05T12:40:24.926Z",
+        "user": 1,
+        "content_type": 19,
+        "object_id": "2",
+        "object_repr": "blida",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2021-10-05T12:40:41.113Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "1",
+        "object_repr": "alger centre",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2021-10-05T12:40:46.826Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "2",
+        "object_repr": "hydra",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2021-10-05T12:40:51.982Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "3",
+        "object_repr": "ben aknoun",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2021-10-05T12:41:01.022Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "4",
+        "object_repr": "blida",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2021-10-05T12:41:07.129Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "5",
+        "object_repr": "boufarik",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2021-10-05T12:41:16.546Z",
+        "user": 1,
+        "content_type": 20,
+        "object_id": "6",
+        "object_repr": "afroun",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2021-10-08T08:33:34.745Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Telerupteur 10A Radio Power",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"product document\", \"object\": \"ProductDocument object (3)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2021-10-10T09:05:28.885Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "1",
+        "object_repr": "ans d'experience",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2021-10-10T09:05:42.907Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "2",
+        "object_repr": "Projet réaliser",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2021-10-10T09:05:50.991Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "client satisfait",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2021-10-10T09:06:08.908Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "4",
+        "object_repr": "Trophés Réçu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2021-10-10T09:29:40.690Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "1",
+        "object_repr": "ans \\d'experience",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2021-10-10T09:30:00.434Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "1",
+        "object_repr": "ans d'experience",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2021-10-10T09:44:24.064Z",
+        "user": 1,
+        "content_type": 25,
+        "object_id": "1",
+        "object_repr": "Équipe expérimentée",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2021-10-10T09:44:30.876Z",
+        "user": 1,
+        "content_type": 25,
+        "object_id": "2",
+        "object_repr": "sûr et sécuriser à 100%",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2021-10-10T09:44:39.633Z",
+        "user": 1,
+        "content_type": 25,
+        "object_id": "3",
+        "object_repr": "Visiter nos références",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2021-10-10T09:44:48.043Z",
+        "user": 1,
+        "content_type": 25,
+        "object_id": "4",
+        "object_repr": "Distributeur CAME BPT exclusif",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2021-10-10T10:15:15.276Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "test",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"- Gamme\", \"object\": \"test\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2021-10-10T10:32:59.249Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "test",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2022-02-05T15:08:31.963Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\", \"Logo n\\u00e9gatif\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2022-02-06T09:33:46.735Z",
+        "user": 1,
+        "content_type": 23,
+        "object_id": "1",
+        "object_repr": "Business object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Logo\", \"Logo n\\u00e9gatif\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2022-02-06T11:08:12.871Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "77",
+        "object_repr": "KNX panneaux tactiles",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX s\\u00e9rie de commutateurs\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX s\\u00e9rie /groupe de douilles\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX op\\u00e9rateurs\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX passerelles\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2022-02-06T11:10:55.226Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "55",
+        "object_repr": "Produits Industriels",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2022-02-06T11:11:11.084Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Appareillage et contrôle du bâtiment",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2022-02-06T11:11:20.530Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "38",
+        "object_repr": "Eclairage",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2022-02-06T11:11:29.857Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "37",
+        "object_repr": "Distribution et gestion de l'énergie",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2022-02-06T11:11:38.092Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Fils et Câbles",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2022-02-06T12:55:31.344Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "LEGRAND",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2022-02-06T12:55:31.354Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "SCHNEIDER ELECTRIC",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2022-02-06T12:55:39.746Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Came BPT",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2022-02-06T12:55:46.595Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Interra",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2022-02-06T13:03:51.999Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "INTERRA i7 Plus (Residence)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"product document\", \"object\": \"ProductDocument object (4)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2022-02-06T13:04:54.953Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "INTERRA i7 Plus (Residence)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (10)\"}}, {\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (11)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2022-02-06T14:14:43.663Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "82",
+        "object_repr": "KNX RF solutions",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX capteurs\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX composants syst\\u00e8me\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX capteurs conventionnels\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"GRMS et solutions h\\u00f4teli\\u00e8res\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"IP intercom\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Serveurs intera\"}}, {\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"Syst\\u00e8mes d\\u2019\\u00e9clairage DALI\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2022-02-06T14:18:08.907Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "82",
+        "object_repr": "KNX RF solutions",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2022-02-06T14:19:19.417Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "87",
+        "object_repr": "IP intercom",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2022-02-06T14:20:17.854Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "79",
+        "object_repr": "KNX série /groupe de douilles",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2022-02-06T14:21:20.308Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "Solution object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (1)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2022-02-06T14:46:52.175Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "Solution object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2022-02-07T08:09:46.419Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "77",
+        "object_repr": "KNX panneaux tactiles",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"INTERRA i7 Plus (H\\u00f4tel)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2022-02-07T08:18:18.467Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "77",
+        "object_repr": "KNX panneaux tactiles",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"Interra 7'' panneau tactile\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"Interra 10'' panneau tactile\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2022-02-07T09:47:18.270Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "83",
+        "object_repr": "KNX capteurs",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"combo capteur\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2022-02-07T09:57:04.166Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "90",
+        "object_repr": "KNX gamme de commutateurs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2022-02-07T09:57:19.443Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "90",
+        "object_repr": "KNX gamme de commutateurs",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2022-02-07T10:08:01.603Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "78",
+        "object_repr": "KNX série de commutateurs",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"Iswitch\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"Interra just touch\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"Just Touch PRO\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2022-02-07T13:24:08.735Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "78",
+        "object_repr": "KNX série de commutateurs",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Produit\", \"object\": \"iSwitch Anthracite Matt Plastic\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"iSwitch plastique gris m\\u00e9tallique\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"Acier inoxydable naturel iSwitch\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2022-02-07T14:30:17.552Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "81",
+        "object_repr": "KNX passerelles",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"Cat\\u00e9gorie\", \"object\": \"KNX Passerelle du climatiseur\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"Mitsubishi KNX passerelle \\u00e9lectrique\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"passerelle LG KNX\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"Mitsubishi passerelle lourde KNX\"}}, {\"added\": {\"name\": \"Produit\", \"object\": \"passerelle Samsung KNX\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2022-02-08T08:09:49.465Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "2",
+        "object_repr": "Solution object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2022-02-08T08:17:24.669Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "Solution object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom / titre\"]}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (2)\"}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (3)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2022-02-08T08:32:07.524Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "3",
+        "object_repr": "Résidence et Villa Solutions",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (4)\"}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (5)\"}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (6)\"}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (7)\"}}, {\"added\": {\"name\": \"solution element\", \"object\": \"SolutionElement object (8)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2022-02-08T08:32:28.850Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "3",
+        "object_repr": "Résidence et Villa Solutions",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2022-02-08T08:33:59.525Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "2",
+        "object_repr": "Solutions commerciales et publiques",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2022-02-08T09:42:09.012Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "INTERRA i7 Plus (Hôtel)",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (12)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2022-02-08T09:43:29.402Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "Interra 7'' panneau tactile",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (13)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2022-02-08T09:44:11.437Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "Interra 10'' panneau tactile",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (14)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2022-02-08T09:45:23.863Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "combo capteur",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (15)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2022-02-08T09:46:27.614Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "Iswitch",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (16)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2022-02-08T09:48:24.610Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "13",
+        "object_repr": "Just Touch PRO",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (17)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 152,
+    "fields": {
+        "action_time": "2022-02-08T09:50:21.813Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "14",
+        "object_repr": "iSwitch Anthracite Matt Plastic",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (18)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 153,
+    "fields": {
+        "action_time": "2022-02-08T09:54:43.022Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "15",
+        "object_repr": "iSwitch plastique gris métallique",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (19)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 154,
+    "fields": {
+        "action_time": "2022-02-08T09:55:33.930Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "16",
+        "object_repr": "Acier inoxydable naturel iSwitch",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (20)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 155,
+    "fields": {
+        "action_time": "2022-02-08T09:59:02.117Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "17",
+        "object_repr": "Mitsubishi KNX passerelle électrique",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (21)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 156,
+    "fields": {
+        "action_time": "2022-02-08T09:59:43.126Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "18",
+        "object_repr": "passerelle LG KNX",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (22)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 157,
+    "fields": {
+        "action_time": "2022-02-08T10:00:34.697Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "19",
+        "object_repr": "Mitsubishi passerelle lourde KNX",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (23)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 158,
+    "fields": {
+        "action_time": "2022-02-08T10:01:15.564Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "20",
+        "object_repr": "passerelle Samsung KNX",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (24)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 159,
+    "fields": {
+        "action_time": "2022-02-08T10:01:26.368Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "3",
+        "object_repr": "Résidence et Villa Solutions",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 160,
+    "fields": {
+        "action_time": "2022-02-08T10:04:24.138Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "12",
+        "object_repr": "Interra just touch",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"photo product\", \"object\": \"PhotoProduct object (25)\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 161,
+    "fields": {
+        "action_time": "2022-02-08T10:45:51.891Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "2",
+        "object_repr": "Solutions commerciales et publiques",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Home image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 162,
+    "fields": {
+        "action_time": "2022-02-08T10:46:07.205Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "INTERRA GRMS et solutions hôtelières intelligentes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 163,
+    "fields": {
+        "action_time": "2022-02-08T10:51:30.303Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "3",
+        "object_repr": "Résidence et Villa Solutions",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Home image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 164,
+    "fields": {
+        "action_time": "2022-02-08T12:33:41.461Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "INTERRA GRMS et solutions hôtelières intelligentes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Home image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 165,
+    "fields": {
+        "action_time": "2022-02-08T12:40:02.724Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "2",
+        "object_repr": "Projets réalisers",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 166,
+    "fields": {
+        "action_time": "2022-02-08T12:40:10.486Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 167,
+    "fields": {
+        "action_time": "2022-02-08T12:40:14.933Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "1",
+        "object_repr": "ans d'experiences",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 168,
+    "fields": {
+        "action_time": "2022-02-08T12:40:24.567Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "1",
+        "object_repr": "ans d'experience",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 169,
+    "fields": {
+        "action_time": "2022-02-08T12:40:33.519Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "4",
+        "object_repr": "Trophés Réçus",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 170,
+    "fields": {
+        "action_time": "2022-02-08T12:40:46.762Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chiffre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 171,
+    "fields": {
+        "action_time": "2022-02-08T12:41:18.224Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "4",
+        "object_repr": "Trophés Reçus",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Nom de l'acomplissement\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 172,
+    "fields": {
+        "action_time": "2022-02-08T12:41:25.471Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chiffre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 173,
+    "fields": {
+        "action_time": "2022-02-08T12:41:55.057Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chiffre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 174,
+    "fields": {
+        "action_time": "2022-02-08T12:42:06.783Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chiffre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 175,
+    "fields": {
+        "action_time": "2022-02-08T12:43:00.962Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chiffre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 176,
+    "fields": {
+        "action_time": "2022-02-08T12:43:51.784Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "INTERRA GRMS et solutions hôtelières intelligentes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 177,
+    "fields": {
+        "action_time": "2022-02-08T12:44:00.314Z",
+        "user": 1,
+        "content_type": 38,
+        "object_id": "1",
+        "object_repr": "INTERRA GRMS et solutions hôtelières intelligentes",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 178,
+    "fields": {
+        "action_time": "2022-02-08T12:45:51.507Z",
+        "user": 1,
+        "content_type": 26,
+        "object_id": "3",
+        "object_repr": "clients satisfaits",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Chiffre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 179,
+    "fields": {
+        "action_time": "2022-02-08T12:53:00.204Z",
+        "user": 1,
+        "content_type": 24,
+        "object_id": "2",
+        "object_repr": "Slide object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Sous titre de la photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 180,
+    "fields": {
+        "action_time": "2022-02-08T12:53:00.224Z",
+        "user": 1,
+        "content_type": 24,
+        "object_id": "1",
+        "object_repr": "Slide object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Sous titre de la photo\"]}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add Produits Specification",
+        "content_type": 7,
+        "codename": "add_atribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change Produits Specification",
+        "content_type": 7,
+        "codename": "change_atribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete Produits Specification",
+        "content_type": 7,
+        "codename": "delete_atribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view Produits Specification",
+        "content_type": 7,
+        "codename": "view_atribute"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add - Marque",
+        "content_type": 8,
+        "codename": "add_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change - Marque",
+        "content_type": 8,
+        "codename": "change_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete - Marque",
+        "content_type": 8,
+        "codename": "delete_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view - Marque",
+        "content_type": 8,
+        "codename": "view_brand"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add Catégorie",
+        "content_type": 9,
+        "codename": "add_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change Catégorie",
+        "content_type": 9,
+        "codename": "change_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete Catégorie",
+        "content_type": 9,
+        "codename": "delete_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view Catégorie",
+        "content_type": 9,
+        "codename": "view_category"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add Formulaire de contact",
+        "content_type": 10,
+        "codename": "add_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change Formulaire de contact",
+        "content_type": 10,
+        "codename": "change_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete Formulaire de contact",
+        "content_type": 10,
+        "codename": "delete_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view Formulaire de contact",
+        "content_type": 10,
+        "codename": "view_contactform"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add - Gamme",
+        "content_type": 11,
+        "codename": "add_gamme"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change - Gamme",
+        "content_type": 11,
+        "codename": "change_gamme"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete - Gamme",
+        "content_type": 11,
+        "codename": "delete_gamme"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view - Gamme",
+        "content_type": 11,
+        "codename": "view_gamme"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add Produit",
+        "content_type": 12,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change Produit",
+        "content_type": 12,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete Produit",
+        "content_type": 12,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view Produit",
+        "content_type": 12,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add - Produits Type",
+        "content_type": 13,
+        "codename": "add_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change - Produits Type",
+        "content_type": 13,
+        "codename": "change_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete - Produits Type",
+        "content_type": 13,
+        "codename": "delete_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view - Produits Type",
+        "content_type": 13,
+        "codename": "view_producttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add product document",
+        "content_type": 14,
+        "codename": "add_productdocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change product document",
+        "content_type": 14,
+        "codename": "change_productdocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete product document",
+        "content_type": 14,
+        "codename": "delete_productdocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view product document",
+        "content_type": 14,
+        "codename": "view_productdocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add Produit Details",
+        "content_type": 15,
+        "codename": "add_productdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change Produit Details",
+        "content_type": 15,
+        "codename": "change_productdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete Produit Details",
+        "content_type": 15,
+        "codename": "delete_productdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view Produit Details",
+        "content_type": 15,
+        "codename": "view_productdetail"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add photo product",
+        "content_type": 16,
+        "codename": "add_photoproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change photo product",
+        "content_type": 16,
+        "codename": "change_photoproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete photo product",
+        "content_type": 16,
+        "codename": "delete_photoproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view photo product",
+        "content_type": 16,
+        "codename": "view_photoproduct"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 65,
+    "fields": {
+        "name": "Can add Atribute Value",
+        "content_type": 17,
+        "codename": "add_atributesvalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 66,
+    "fields": {
+        "name": "Can change Atribute Value",
+        "content_type": 17,
+        "codename": "change_atributesvalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 67,
+    "fields": {
+        "name": "Can delete Atribute Value",
+        "content_type": 17,
+        "codename": "delete_atributesvalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 68,
+    "fields": {
+        "name": "Can view Atribute Value",
+        "content_type": 17,
+        "codename": "view_atributesvalue"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 69,
+    "fields": {
+        "name": "Can add coupon",
+        "content_type": 18,
+        "codename": "add_coupon"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 70,
+    "fields": {
+        "name": "Can change coupon",
+        "content_type": 18,
+        "codename": "change_coupon"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 71,
+    "fields": {
+        "name": "Can delete coupon",
+        "content_type": 18,
+        "codename": "delete_coupon"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 72,
+    "fields": {
+        "name": "Can view coupon",
+        "content_type": 18,
+        "codename": "view_coupon"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 73,
+    "fields": {
+        "name": "Can add Wilaya",
+        "content_type": 19,
+        "codename": "add_wilaya"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 74,
+    "fields": {
+        "name": "Can change Wilaya",
+        "content_type": 19,
+        "codename": "change_wilaya"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 75,
+    "fields": {
+        "name": "Can delete Wilaya",
+        "content_type": 19,
+        "codename": "delete_wilaya"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 76,
+    "fields": {
+        "name": "Can view Wilaya",
+        "content_type": 19,
+        "codename": "view_wilaya"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 77,
+    "fields": {
+        "name": "Can add Commune",
+        "content_type": 20,
+        "codename": "add_commune"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 78,
+    "fields": {
+        "name": "Can change Commune",
+        "content_type": 20,
+        "codename": "change_commune"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 79,
+    "fields": {
+        "name": "Can delete Commune",
+        "content_type": 20,
+        "codename": "delete_commune"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 80,
+    "fields": {
+        "name": "Can view Commune",
+        "content_type": 20,
+        "codename": "view_commune"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 81,
+    "fields": {
+        "name": "Can add Commande",
+        "content_type": 21,
+        "codename": "add_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 82,
+    "fields": {
+        "name": "Can change Commande",
+        "content_type": 21,
+        "codename": "change_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 83,
+    "fields": {
+        "name": "Can delete Commande",
+        "content_type": 21,
+        "codename": "delete_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 84,
+    "fields": {
+        "name": "Can view Commande",
+        "content_type": 21,
+        "codename": "view_order"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 85,
+    "fields": {
+        "name": "Can add order item",
+        "content_type": 22,
+        "codename": "add_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 86,
+    "fields": {
+        "name": "Can change order item",
+        "content_type": 22,
+        "codename": "change_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 87,
+    "fields": {
+        "name": "Can delete order item",
+        "content_type": 22,
+        "codename": "delete_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 88,
+    "fields": {
+        "name": "Can view order item",
+        "content_type": 22,
+        "codename": "view_orderitem"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 89,
+    "fields": {
+        "name": "Can add 1. Infomation",
+        "content_type": 23,
+        "codename": "add_business"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 90,
+    "fields": {
+        "name": "Can change 1. Infomation",
+        "content_type": 23,
+        "codename": "change_business"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 91,
+    "fields": {
+        "name": "Can delete 1. Infomation",
+        "content_type": 23,
+        "codename": "delete_business"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 92,
+    "fields": {
+        "name": "Can view 1. Infomation",
+        "content_type": 23,
+        "codename": "view_business"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 93,
+    "fields": {
+        "name": "Can add 2. Slides haut page d'accueil",
+        "content_type": 24,
+        "codename": "add_slide"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 94,
+    "fields": {
+        "name": "Can change 2. Slides haut page d'accueil",
+        "content_type": 24,
+        "codename": "change_slide"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 95,
+    "fields": {
+        "name": "Can delete 2. Slides haut page d'accueil",
+        "content_type": 24,
+        "codename": "delete_slide"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 96,
+    "fields": {
+        "name": "Can view 2. Slides haut page d'accueil",
+        "content_type": 24,
+        "codename": "view_slide"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 97,
+    "fields": {
+        "name": "Can add 7. Service Clients",
+        "content_type": 25,
+        "codename": "add_clientservice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 98,
+    "fields": {
+        "name": "Can change 7. Service Clients",
+        "content_type": 25,
+        "codename": "change_clientservice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 99,
+    "fields": {
+        "name": "Can delete 7. Service Clients",
+        "content_type": 25,
+        "codename": "delete_clientservice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 100,
+    "fields": {
+        "name": "Can view 7. Service Clients",
+        "content_type": 25,
+        "codename": "view_clientservice"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 101,
+    "fields": {
+        "name": "Can add 6. Accomplissement",
+        "content_type": 26,
+        "codename": "add_counter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 102,
+    "fields": {
+        "name": "Can change 6. Accomplissement",
+        "content_type": 26,
+        "codename": "change_counter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 103,
+    "fields": {
+        "name": "Can delete 6. Accomplissement",
+        "content_type": 26,
+        "codename": "delete_counter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 104,
+    "fields": {
+        "name": "Can view 6. Accomplissement",
+        "content_type": 26,
+        "codename": "view_counter"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 105,
+    "fields": {
+        "name": "Can add 4. Petits Banners en duo",
+        "content_type": 27,
+        "codename": "add_dualbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 106,
+    "fields": {
+        "name": "Can change 4. Petits Banners en duo",
+        "content_type": 27,
+        "codename": "change_dualbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 107,
+    "fields": {
+        "name": "Can delete 4. Petits Banners en duo",
+        "content_type": 27,
+        "codename": "delete_dualbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 108,
+    "fields": {
+        "name": "Can view 4. Petits Banners en duo",
+        "content_type": 27,
+        "codename": "view_dualbanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 109,
+    "fields": {
+        "name": "Can add 5. Grand Banner bas de page d'accueil",
+        "content_type": 28,
+        "codename": "add_largebanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 110,
+    "fields": {
+        "name": "Can change 5. Grand Banner bas de page d'accueil",
+        "content_type": 28,
+        "codename": "change_largebanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 111,
+    "fields": {
+        "name": "Can delete 5. Grand Banner bas de page d'accueil",
+        "content_type": 28,
+        "codename": "delete_largebanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 112,
+    "fields": {
+        "name": "Can view 5. Grand Banner bas de page d'accueil",
+        "content_type": 28,
+        "codename": "view_largebanner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 113,
+    "fields": {
+        "name": "Can add 9. Nos Partenaires",
+        "content_type": 29,
+        "codename": "add_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 114,
+    "fields": {
+        "name": "Can change 9. Nos Partenaires",
+        "content_type": 29,
+        "codename": "change_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 115,
+    "fields": {
+        "name": "Can delete 9. Nos Partenaires",
+        "content_type": 29,
+        "codename": "delete_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 116,
+    "fields": {
+        "name": "Can view 9. Nos Partenaires",
+        "content_type": 29,
+        "codename": "view_partner"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 117,
+    "fields": {
+        "name": "Can add 8. Nos Projets",
+        "content_type": 30,
+        "codename": "add_realisation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 118,
+    "fields": {
+        "name": "Can change 8. Nos Projets",
+        "content_type": 30,
+        "codename": "change_realisation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 119,
+    "fields": {
+        "name": "Can delete 8. Nos Projets",
+        "content_type": 30,
+        "codename": "delete_realisation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 120,
+    "fields": {
+        "name": "Can view 8. Nos Projets",
+        "content_type": 30,
+        "codename": "view_realisation"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 121,
+    "fields": {
+        "name": "Can add 9. Photos de Nos Projets",
+        "content_type": 31,
+        "codename": "add_realisationphotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 122,
+    "fields": {
+        "name": "Can change 9. Photos de Nos Projets",
+        "content_type": 31,
+        "codename": "change_realisationphotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 123,
+    "fields": {
+        "name": "Can delete 9. Photos de Nos Projets",
+        "content_type": 31,
+        "codename": "delete_realisationphotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 124,
+    "fields": {
+        "name": "Can view 9. Photos de Nos Projets",
+        "content_type": 31,
+        "codename": "view_realisationphotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 125,
+    "fields": {
+        "name": "Can add 3. Trois Photos Acceuil",
+        "content_type": 32,
+        "codename": "add_threephotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 126,
+    "fields": {
+        "name": "Can change 3. Trois Photos Acceuil",
+        "content_type": 32,
+        "codename": "change_threephotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 127,
+    "fields": {
+        "name": "Can delete 3. Trois Photos Acceuil",
+        "content_type": 32,
+        "codename": "delete_threephotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 128,
+    "fields": {
+        "name": "Can view 3. Trois Photos Acceuil",
+        "content_type": 32,
+        "codename": "view_threephotos"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 129,
+    "fields": {
+        "name": "Can add faq",
+        "content_type": 33,
+        "codename": "add_faq"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 130,
+    "fields": {
+        "name": "Can change faq",
+        "content_type": 33,
+        "codename": "change_faq"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 131,
+    "fields": {
+        "name": "Can delete faq",
+        "content_type": 33,
+        "codename": "delete_faq"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 132,
+    "fields": {
+        "name": "Can view faq",
+        "content_type": 33,
+        "codename": "view_faq"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 133,
+    "fields": {
+        "name": "Can add 3. Promotions Photos Acceuil",
+        "content_type": 34,
+        "codename": "add_homepromotion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 134,
+    "fields": {
+        "name": "Can change 3. Promotions Photos Acceuil",
+        "content_type": 34,
+        "codename": "change_homepromotion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 135,
+    "fields": {
+        "name": "Can delete 3. Promotions Photos Acceuil",
+        "content_type": 34,
+        "codename": "delete_homepromotion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 136,
+    "fields": {
+        "name": "Can view 3. Promotions Photos Acceuil",
+        "content_type": 34,
+        "codename": "view_homepromotion"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 137,
+    "fields": {
+        "name": "Can add site",
+        "content_type": 35,
+        "codename": "add_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 138,
+    "fields": {
+        "name": "Can change site",
+        "content_type": 35,
+        "codename": "change_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 139,
+    "fields": {
+        "name": "Can delete site",
+        "content_type": 35,
+        "codename": "delete_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 140,
+    "fields": {
+        "name": "Can view site",
+        "content_type": 35,
+        "codename": "view_site"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 141,
+    "fields": {
+        "name": "Can add solution document",
+        "content_type": 36,
+        "codename": "add_solutiondocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 142,
+    "fields": {
+        "name": "Can change solution document",
+        "content_type": 36,
+        "codename": "change_solutiondocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 143,
+    "fields": {
+        "name": "Can delete solution document",
+        "content_type": 36,
+        "codename": "delete_solutiondocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 144,
+    "fields": {
+        "name": "Can view solution document",
+        "content_type": 36,
+        "codename": "view_solutiondocument"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 145,
+    "fields": {
+        "name": "Can add solution element",
+        "content_type": 37,
+        "codename": "add_solutionelement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 146,
+    "fields": {
+        "name": "Can change solution element",
+        "content_type": 37,
+        "codename": "change_solutionelement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 147,
+    "fields": {
+        "name": "Can delete solution element",
+        "content_type": 37,
+        "codename": "delete_solutionelement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 148,
+    "fields": {
+        "name": "Can view solution element",
+        "content_type": 37,
+        "codename": "view_solutionelement"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 149,
+    "fields": {
+        "name": "Can add solution",
+        "content_type": 38,
+        "codename": "add_solution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 150,
+    "fields": {
+        "name": "Can change solution",
+        "content_type": 38,
+        "codename": "change_solution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 151,
+    "fields": {
+        "name": "Can delete solution",
+        "content_type": 38,
+        "codename": "delete_solution"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 152,
+    "fields": {
+        "name": "Can view solution",
+        "content_type": 38,
+        "codename": "view_solution"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$cTyMg0Tu86B5QOdzxfnsNC$p+iat2HrMJLeeXqxfGorl+BYxzhiKs/dTLiTlqxXj6o=",
+        "last_login": "2022-02-08T08:07:43.721Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-09-25T14:19:46.195Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "core",
+        "model": "atribute"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "core",
+        "model": "brand"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "core",
+        "model": "category"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "core",
+        "model": "contactform"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "core",
+        "model": "gamme"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "core",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "core",
+        "model": "producttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "core",
+        "model": "productdocument"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "core",
+        "model": "productdetail"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "core",
+        "model": "photoproduct"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+        "app_label": "core",
+        "model": "atributesvalue"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+        "app_label": "coupons",
+        "model": "coupon"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+        "app_label": "delivery",
+        "model": "wilaya"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+        "app_label": "delivery",
+        "model": "commune"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 21,
+    "fields": {
+        "app_label": "order",
+        "model": "order"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 22,
+    "fields": {
+        "app_label": "order",
+        "model": "orderitem"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 23,
+    "fields": {
+        "app_label": "business",
+        "model": "business"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 24,
+    "fields": {
+        "app_label": "business",
+        "model": "slide"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 25,
+    "fields": {
+        "app_label": "business",
+        "model": "clientservice"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 26,
+    "fields": {
+        "app_label": "business",
+        "model": "counter"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 27,
+    "fields": {
+        "app_label": "business",
+        "model": "dualbanner"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 28,
+    "fields": {
+        "app_label": "business",
+        "model": "largebanner"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 29,
+    "fields": {
+        "app_label": "business",
+        "model": "partner"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 30,
+    "fields": {
+        "app_label": "business",
+        "model": "realisation"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 31,
+    "fields": {
+        "app_label": "business",
+        "model": "realisationphotos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 32,
+    "fields": {
+        "app_label": "business",
+        "model": "threephotos"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 33,
+    "fields": {
+        "app_label": "business",
+        "model": "faq"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 34,
+    "fields": {
+        "app_label": "business",
+        "model": "homepromotion"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 35,
+    "fields": {
+        "app_label": "sites",
+        "model": "site"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 36,
+    "fields": {
+        "app_label": "core",
+        "model": "solutiondocument"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 37,
+    "fields": {
+        "app_label": "core",
+        "model": "solutionelement"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 38,
+    "fields": {
+        "app_label": "core",
+        "model": "solution"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "03t7ynxoiqi8qim5rbl71c6v59bwm27o",
+    "fields": {
+        "session_data": ".eJytjTsOgzAQRO-yNbJsY1uYMn3OYK1_gSSCBEwRIe4eLFEEKXQ0W8zMvjeDwyFBPYPI5z1hl9r0gZoV8BpaF6AGRiiFAjClobVTCoZBHfE5ht-M_8nKLVsKKI_pFaUnCPixQJ4gWA0Gp9SYaQyDaX3mwi6z6B6hy4W_Y3frieu7jCF5QrZ2JNfeh-dl2-4ADY7N-k2F5IxqZDpwTZ2rrJIeK6VilCyoynLNLfKIzGtbaqVEic574aW0QmCE5Qskfpl_:1mVqaZ:4-ZclJ4USKEpyJydcaigtbTU3SIe2KF1aJZWj3nEaTM",
+        "expire_date": "2021-10-14T07:34:43.524Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "2s6kxt3vaf5g9xsiuedqyj3qvxp4s13b",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mUUqD:fh_43FLKN9wttR4c0ujU3zDhE7Rcp0GfgXMUtu6c01Q",
+        "expire_date": "2021-10-10T14:09:17.505Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4vw0wa6rjkmoczt92uxpecu01o4s7xr7",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mUUGH:3emo39mTfBwqYwxrATTHXimZrFfI4qblF31Kj_p020s",
+        "expire_date": "2021-10-10T13:32:09.825Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6jm2k0rnp5kaqm2fk35zrgyx4okwewn7",
+    "fields": {
+        "session_data": ".eJydzDsOwjAMgOG7eK6ivNV0ZOcMkfOiAdRCmw6o6t1pJAbKyOLht_2t4HEq0K0g6nguOJRcXtCJBh5T9hE6YC2lhFJoAEuZsltKtGzvh8B_g6hha0AdXf7lyv_dHba4lN4uc5xsDpWDQ3Pob3Goi3DF4TISPw7VIPWEfLYzOY8h3k-f2wPQ49zv31QqzqhBZiI31PvWaRWw1TolxaJuHTfcIU_IgnHCaC0F-hBkUMpJiQm2N3Bvb8g:1mWxdq:Uh7Yplr7XdiMjhpvas3Qo28wHGXaSR-GxS2ZcDnf1RA",
+        "expire_date": "2021-10-17T09:18:42.579Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "6k8ev9ee6u72y1km8fpj1qub5pqthaka",
+    "fields": {
+        "session_data": ".eJxVjDEOwyAQBP9CHSHAgMBl-rwB3XEQnEQg2biy_PfYkouk3ZmdjQVYewnrkuYwERuZZLffDSG-Uz0BvaA-G4-t9nlCfir8ogt_NEqf--X-BQos5XgLbZQUHqRPyosYHVpD4KzN2chkHSqvEFQGSR4Hb60eIBJpMga1hnxEI8ydjdu-fwEQEDtL:1mXlDa:GHp7bNkg5BVhJEDDB9yWu_x4VJsh0y4s_9v02iPK5Yw",
+        "expire_date": "2021-10-19T14:14:54.496Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7o59n0ino6ol5k1amduiufjmq48nbbu5",
+    "fields": {
+        "session_data": ".eJxVjEEOgyAQRe8y64YAAhGX3fcMZIaBattAorgy3t2auHH733t_g4hzg2HbHxBwbWNYlzSHiWEABbeNMH5TOQF_sLyriLW0eSJxKuKii3hVTr_n5d4ORlzGfy2N1Up6VD5pL2PsyVnG3rmcrUquJ-01oc6o2FPnnTMdRmbD1pIxmGE_ABiUO0s:1mZWD2:Tzi12N6SmXXT0I9F0zbonYmfbPGM7dh52EDDrjBUTls",
+        "expire_date": "2021-10-24T10:37:36.360Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7swjj3qby29lq9w9z5kkk33gbykloi5f",
+    "fields": {
+        "session_data": ".eJxdjDkOwjAURO_y68jyrjglPWewvjdiQA4kToGi3J1YognNFG9m3gYe5wrDBrLFe8VSc_3AIDp4zdlHGIARSqEDrHXObq3RsgOeAP8HooF978DiWke7LnG2OTQXnJhD_4ilFeGO5TYRP5XmIG1Cfu1CrlOIz8tvexKMuIzHm0rFGTXITOSGet87rQL2WqekWNS944Y75AlZME4YraVAH4IMSjkpMcH-BYQbVN4:1mYRQN:ozwfVvtbzQgN_AnqzQa5Psr_VQWGfbNQm-q0IDMcSfg",
+        "expire_date": "2021-10-21T11:18:55.336Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "8ifigfhknbegnv9jo27m8lam0dgiwdzv",
+    "fields": {
+        "session_data": ".eJxVjEEOgyAQRe8y64YAAhGX3fcMZIaBattAorgy3t2auHH733t_g4hzg2HbHxBwbWNYlzSHiWEABbeNMH5TOQF_sLyriLW0eSJxKuKii3hVTr_n5d4ORlzGfy2N1Up6VD5pL2PsyVnG3rmcrUquJ-01oc6o2FPnnTMdRmbD1pIxmGE_ABiUO0s:1mUP3c:WkSYHNs0SLgvM6EiFZau6t1RS-ZpdSjBld2v8V4W17w",
+        "expire_date": "2021-10-10T07:58:44.017Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "9jnwvhmprho4pcf91p1ka0ga5krvoutj",
+    "fields": {
+        "session_data": ".eJyrVkpOLCpRsqpWMgERhaWJeSWZJZVKVoY6SgVFmcmpSlZKhnoGBko6SoklJUWZSaUlqfGGQEEUASN0AWOQQG1tLQCF2R2q:1mXgoH:RrjTPVXDL2OEdbADxv9oAqXH--6PLmstbZkxI_gggNY",
+        "expire_date": "2021-10-19T09:32:29.034Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "b7g5ch4zf1ev00flmy2a4hhut9jvvtsk",
+    "fields": {
+        "session_data": ".eJxVjEEOgyAQRe8y64YAAhGX3fcMZIaBattAorgy3t2auHH733t_g4hzg2HbHxBwbWNYlzSHiWEABbeNMH5TOQF_sLyriLW0eSJxKuKii3hVTr_n5d4ORlzGfy2N1Up6VD5pL2PsyVnG3rmcrUquJ-01oc6o2FPnnTMdRmbD1pIxmGE_ABiUO0s:1mUqLm:vKTxsiwZEqEW1Q57gjQnSZdGcZLGyzzDDk7x5n5vJEs",
+        "expire_date": "2021-10-11T13:07:18.178Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cprzgzfd33k4ylre4drrmgr7r5d4gfdo",
+    "fields": {
+        "session_data": ".eJxdjDkOwjAURO_y68jyrjglPWewvjdiQA4kToGi3J1YognNFG9m3gYe5wrDBrzFe8VSc_3AIDp4zdlHGIApSgml0AHWOme31mjZwU-A_wPRwL53YHGto12XONscmg5OzKF_xNKKcMdym4ifSnOQNiG_diHXKcTn5bc9CUZcxuNNpeKMGmQmckO9751WAXutU1Is6t5xwx3yhCwYJ4zWUqAPQQalnJSYYP8CKq1VcQ:1mX1Iv:Kc5ENX9pf_XZ2S_FJzQYgVFUDqMCTwR0zkIcqofgvY4",
+        "expire_date": "2021-10-17T13:13:21.194Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "e9l6b5yez03xbylefuixeldnmj4gmud9",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mVrKc:rN6gDc85jvMje3X7RWFeYNasN0nYIP_Ifd9ZbFUiH84",
+        "expire_date": "2021-10-14T08:22:18.884Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "elsmejkbztfcanonkk8kz9ds70npjcjc",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mUV5n:ZoYys8gi7bJ65DUuU5NTEjkOZlprtxVPRslh5LuT9Wk",
+        "expire_date": "2021-10-10T14:25:23.973Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "i52mpl4hm6seyr05696oijjt0c1pux9y",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOJvGHkj5nsNbeNQ4gW4qTCnF3EikFtDPz3lt43Nbst8aLn0lcRScuvyxgfHI5BD2w3KuMtazLHOSRyNM2OVXi1-1s_w4ytryvwZJSyilmhIgDQbIB-7ADpbVh6i0nE7oR2WHQboTBaB17SgjgLGnx-QLxBjgz:1nGexS:uMVoGW55hjIfXUdPO4S2dpBboM7RMNiqNb0otpdeKhs",
+        "expire_date": "2022-02-20T10:39:50.871Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "i5vnpwr4k11n522gyj3hhkkb3hl9gi9g",
+    "fields": {
+        "session_data": ".eJxVjEEOgyAQRe8y64YAAhGX3fcMZIaBattAorgy3t2auHH733t_g4hzg2HbHxBwbWNYlzSHiWEABbeNMH5TOQF_sLyriLW0eSJxKuKii3hVTr_n5d4ORlzGfy2N1Up6VD5pL2PsyVnG3rmcrUquJ-01oc6o2FPnnTMdRmbD1pIxmGE_ABiUO0s:1mb1AY:iV4PY1zA06pwZ1Zp_X3nfsDAjcCnEi61vWk_EEQiBLQ",
+        "expire_date": "2021-10-28T13:53:14.802Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "inkmoc6z157tmu0rj3pemzimt7hl7k55",
+    "fields": {
+        "session_data": ".eJyrVkpOLCpRsqpWMgYRhaWJeSWZJZVKVkY6SgVFmcmpSlZKhhYGBnoGBko6SoklJUWZSaUlqfGGQHEUASN0AWOQQG1tLQDMEB5C:1mVrn0:F43e3or2lDoE1BrQgrGuBpkHSVKTIS12lPT2QtLnmLE",
+        "expire_date": "2021-10-14T08:51:38.945Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "l9arijqsn4m0bnyn1402gloe1nnw2na4",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mXKuQ:Jz0Rc82Up0FWRhp0NvVL_uQMGZLkbuj_bLOcniGlraA",
+        "expire_date": "2021-10-18T10:09:22.068Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "o3b9yu3a8yfdgukb1johyipv18fq7gap",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mVa0l:QDalFKlEBjLirRaE0uF0QvpYKmjWeqpxydcpLWneAcM",
+        "expire_date": "2021-10-13T13:52:39.737Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "q8qm2t03up1f0e2pm1mj88k0hgvb22cm",
+    "fields": {
+        "session_data": ".eJxVjEEOgyAQRe8y64YAAhGX3fcMZIaBattAorgy3t2auHH733t_g4hzg2HbHxBwbWNYlzSHiWEABbeNMH5TOQF_sLyriLW0eSJxKuKii3hVTr_n5d4ORlzGfy2N1Up6VD5pL2PsyVnG3rmcrUquJ-01oc6o2FPnnTMdRmbD1pIxmGE_ABiUO0s:1mVCXk:-5tyo4JJA-FlYtmGVcOGQe5F7W0UtzjR1yhtv7y067E",
+        "expire_date": "2021-10-12T12:49:08.115Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qolywz07ec3zt1bxdyiib16mvvaoxycf",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOJvGHkj5nsNbeNQ4gW4qTCnF3EikFtDPz3lt43Nbst8aLn0lcRScuvyxgfHI5BD2w3KuMtazLHOSRyNM2OVXi1-1s_w4ytryvwZJSyilmhIgDQbIB-7ADpbVh6i0nE7oR2WHQboTBaB17SgjgLGnx-QLxBjgz:1nGMfd:ewcbVNQFZKR_mVXLXdLqTdkmHCc7N4oFigZLRPu6WIw",
+        "expire_date": "2022-02-19T15:08:13.803Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "qybfs0g38zdmqbs2e5dheq4bfrsq8tby",
+    "fields": {
+        "session_data": ".eJxVjEEOgyAQRe8y64YAAhGX3fcMZIaBattAorgy3t2auHH733t_g4hzg2HbHxBwbWNYlzSHiWEABbeNMH5TOQF_sLyriLW0eSJxKuKii3hVTr_n5d4ORlzGfy2N1Up6VD5pL2PsyVnG3rmcrUquJ-01oc6o2FPnnTMdRmbD1pIxmGE_ABiUO0s:1mUqK9:mZqPt9QErwU4yLEDXkQFWQXZ3XW6EM6sopmROXF5Mgo",
+        "expire_date": "2021-10-11T13:05:37.937Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "r3qi7lffabh1bnhpohfr7mqk4mrysxjg",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlnOJvGHkj5nsNbeNQ4gW4qTCnF3EikFtDPz3lt43Nbst8aLn0lcRScuvyxgfHI5BD2w3KuMtazLHOSRyNM2OVXi1-1s_w4ytryvwZJSyilmhIgDQbIB-7ADpbVh6i0nE7oR2WHQboTBaB17SgjgLGnx-QLxBjgz:1nHLXL:Xdzq8OoplSUSs6NnRqM3i-aEKdqx7Sv7clXmUnO6pss",
+        "expire_date": "2022-02-22T08:07:43.727Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "s8v6wi78ojhmjm6aqn2ozae8oe146ryc",
+    "fields": {
+        "session_data": "eyJjYXJ0Ijp7fX0:1mVr4v:fVPdjskKyWW6cRGjuW2RE2GU3vrGCGxu5ve_8gwGJ54",
+        "expire_date": "2021-10-14T08:06:05.673Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "v1ldvw94izq0kl2hzz4pd9ts5iuv28c4",
+    "fields": {
+        "session_data": ".eJxdjDsOgzAQRO-yNbL8F6ZMnzNYa68JJBEkxhQR4u7BUhrSTPFm5m0QMRfoNlA13itOZSwf6FQDrzzGBB2IlnPGOTSApeQxrCV5cfATkP9AVbDvDXhcy-DXJWU_UtXBiQWMjzTVgu443WYW56k6WJ2wX7uw60zpefltT4IBl-F4c22k4A6FS9LxGNtgDWFrbd8bkWwbpJMBZY-CXFDOWq0wEmkyJmiNPexfLmRVdQ:1mVrFB:ULwYLI6pFhqTxF6rWtc5pS3xhxv5c7rWZ1a7GurO5qQ",
+        "expire_date": "2021-10-14T08:16:41.930Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "vw5n5q0s6xw6l5i1fa7whxmscprb8sqv",
+    "fields": {
+        "session_data": ".eJxdjDsOwyAQRO-ytYUAAzIu0-cMaPk4JolwgqGILN89RkrjNFO8mXkbOMwFxg14i3fFVGL5wCg7eOXoAozAJKWEUugAS8nR1hIMO_gJ8H_QN7DvHRisZTZ1DdlE33RwYhbdI6RW-Dum20LckpqDtAn5tSu5Lj48L7_tSTDjOh9vKiRnVCPTgWvq3GCV9DgoNU2SBTVYrrlFPiHz2vZaKdGj8154Ka0QOMH-BSyTVXM:1mVtCk:AEEd4rk-QML7v5e5wp7opMwoztUz-VDPxk5n2sz2Rs4",
+        "expire_date": "2021-10-14T10:22:18.903Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "yfwumkjkq09ckuu3hx6bn3ftwxs0d9uv",
+    "fields": {
+        "session_data": ".eJyrVkpOLCpRsqpWMgURhaWJeSWZJZVKVsY6SgVFmcmpSlZKhiYGBnoGBko6SoklJUWZSaUlqfGGQHEUASN0AWOQQK2OkjGquSZI5lqQb25tLQCSKTiY:1mXh4H:JK0uE3VyPWIuSgX21JGA0sgRGUdf8uNJq_9jiaDyrjQ",
+        "expire_date": "2021-10-19T09:49:01.678Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "core.brand",
+    "pk": 4,
+    "fields": {
+        "name": "Came BPT",
+        "actif": true
+    }
+},
+{
+    "model": "core.brand",
+    "pk": 5,
+    "fields": {
+        "name": "Interra",
+        "actif": true
+    }
+},
+{
+    "model": "core.category",
+    "pk": 5,
+    "fields": {
+        "name": "Vidéophonie et Interphonie",
+        "slug": "videophonie-et-interphonie-none",
+        "actif": true,
+        "icon": "",
+        "parent": null,
+        "lft": 1,
+        "rght": 6,
+        "tree_id": 28,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 31,
+    "fields": {
+        "name": "Vidéophonie",
+        "slug": "videophonie-none",
+        "actif": true,
+        "icon": "",
+        "parent": 5,
+        "lft": 4,
+        "rght": 5,
+        "tree_id": 28,
+        "level": 1
+    }
+},
+{
+    "model": "core.category",
+    "pk": 32,
+    "fields": {
+        "name": "Interphonie",
+        "slug": "interphonie-none",
+        "actif": true,
+        "icon": "",
+        "parent": 5,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 28,
+        "level": 1
+    }
+},
+{
+    "model": "core.category",
+    "pk": 77,
+    "fields": {
+        "name": "KNX panneaux tactiles",
+        "slug": "knx-panneaux-tactiles-77",
+        "actif": true,
+        "icon": "images/categories/peaknx_controlmini_stage.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 26,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 78,
+    "fields": {
+        "name": "KNX série de commutateurs",
+        "slug": "knx-serie-de-commutateurs-78",
+        "actif": true,
+        "icon": "images/categories/vimar-comandi-knx-3m-6wtz3ro.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 18,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 80,
+    "fields": {
+        "name": "KNX opérateurs",
+        "slug": "knx-operateurs-80",
+        "actif": true,
+        "icon": "images/categories/mdt-aks_1616_03-eib-n760256_01.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 15,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 81,
+    "fields": {
+        "name": "KNX passerelles",
+        "slug": "knx-passerelles-81",
+        "actif": true,
+        "icon": "images/categories/DLC-02-KN.png",
+        "parent": null,
+        "lft": 1,
+        "rght": 4,
+        "tree_id": 16,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 83,
+    "fields": {
+        "name": "KNX capteurs",
+        "slug": "knx-capteurs-83",
+        "actif": true,
+        "icon": "images/categories/221153192185.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 8,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 84,
+    "fields": {
+        "name": "KNX composants système",
+        "slug": "knx-composants-systeme-84",
+        "actif": true,
+        "icon": "images/categories/KNX-Systemkomponenten_s.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 9,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 85,
+    "fields": {
+        "name": "KNX capteurs conventionnels",
+        "slug": "knx-capteurs-conventionnels-85",
+        "actif": true,
+        "icon": "images/categories/flood-detectors-crop.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 11,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 86,
+    "fields": {
+        "name": "GRMS et solutions hôtelières",
+        "slug": "grms-et-solutions-hotelieres-86",
+        "actif": true,
+        "icon": "images/categories/download_2_.png",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 13,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 88,
+    "fields": {
+        "name": "Serveurs intera",
+        "slug": "serveurs-intera-88",
+        "actif": true,
+        "icon": "images/categories/sip-server-crop.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 7,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 89,
+    "fields": {
+        "name": "Systèmes d’éclairage DALI",
+        "slug": "systemes-declairage-dali-89",
+        "actif": true,
+        "icon": "images/categories/341583_OSLON_Square_conference_room.jpg",
+        "parent": null,
+        "lft": 1,
+        "rght": 2,
+        "tree_id": 6,
+        "level": 0
+    }
+},
+{
+    "model": "core.category",
+    "pk": 91,
+    "fields": {
+        "name": "KNX Passerelle du climatiseur",
+        "slug": "knx-passerelle-du-climatiseur-none",
+        "actif": true,
+        "icon": "",
+        "parent": 81,
+        "lft": 2,
+        "rght": 3,
+        "tree_id": 16,
+        "level": 1
+    }
+},
+{
+    "model": "core.product",
+    "pk": 6,
+    "fields": {
+        "name": "INTERRA i7 Plus (Residence)",
+        "reference": null,
+        "slug": "interra-i7-plus-residence",
+        "category": 77,
+        "text": "Toutes les fonctions telles que l'éclairage, le contrôle des rideaux / volets ou le contrôle de la température ambiante peuvent être facilement exécutées. La nouvelle interface utilisateur offre des fonctions de contrôle automatique du temps, de planification ou de gestion complète des scénarios. L'écran tactile nouvelle génération i7+ (Plus) vous ouvre les portes d'un nouveau style de vie résidentiel. Les applications de communication du bâtiment (services d'interphone et de conciergerie) seront une aide importante avec ses fonctionnalités de gestion de messagerie et d'annonce.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-06T13:03:51.993Z",
+        "updated": "2022-02-06T13:04:54.942Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 7,
+    "fields": {
+        "name": "INTERRA i7 Plus (Hôtel)",
+        "reference": null,
+        "slug": "interra-i7-plus-hotel",
+        "category": 77,
+        "text": "Le panneaux tactiles Interra i7 + (Plus) apporte un nouveau souffle aux technologies de construction intelligentes. Il suit les nouvelles tendances avec son design plat et vertical.\r\n\r\n-Fonction thermostat\r\n-Nouvelle conception de l’interface\r\n-Écran plat\r\n-Design mince et vertical\r\n-Scénarios de minuterie\r\n\r\nToutes les fonctions telles que l’éclairage, la commande de rideau/obturateur ou le contrôle de la température ambiante peuvent être effectuées facilement. La nouvelle interface utilisateur offre des fonctions de contrôle automatique du temps, de planification ou de gestion de scénarios complète. L’écran tactile nouvelle génération i7 + (Plus) ouvre les portes d’un nouveau mode de vie résidentiel. Les applications de communication dans les immeubles (interphone et service de conciergerie) seront d’un grand secours avec leurs fonctions de gestion des messages et d’annonce.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T08:09:46.417Z",
+        "updated": "2022-02-08T09:42:09.004Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 8,
+    "fields": {
+        "name": "Interra 7'' panneau tactile",
+        "reference": null,
+        "slug": "interra-7-panneau-tactile",
+        "category": 77,
+        "text": "Interra 4 panneau tactile, qui est préféré par ceux qui sont à la recherche d’un design moderne, matériel, logiciel et un produit avec une interface appropriée qui peut répondre à toutes les exigences du projet, est conçu pour être utilisé sur n’importe quelle zone ou surface.\r\n\r\nLe système, qui fournit les solutions les plus adaptées à tous les besoins en matière de systèmes de bâtiments intelligents, se distingue dans son domaine en alliant confort et commodité.\r\n\r\nGrâce à l’écran tactile Interra, vous pouvez effectuer toutes les applications dont vous avez besoin avec une petite touche.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T08:18:18.464Z",
+        "updated": "2022-02-08T09:43:29.397Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 9,
+    "fields": {
+        "name": "Interra 10'' panneau tactile",
+        "reference": null,
+        "slug": "interra-10-panneau-tactile",
+        "category": 77,
+        "text": "Interra 4 panneau tactile, qui est préféré par ceux qui sont à la recherche d’un design moderne, matériel, logiciel et un produit avec une interface appropriée qui peut répondre à toutes les exigences du projet, est conçu pour être utilisé sur n’importe quelle zone ou surface.\r\n\r\nLe système, qui fournit les solutions les plus adaptées à tous les besoins en matière de systèmes de bâtiments intelligents, se distingue dans son domaine en alliant confort et commodité.\r\n\r\nGrâce à l’écran tactile Interra, vous pouvez effectuer toutes les applications dont vous avez besoin avec une petite touche.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T08:18:18.466Z",
+        "updated": "2022-02-08T09:44:11.430Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 10,
+    "fields": {
+        "name": "combo capteur",
+        "reference": null,
+        "slug": "combo-capteur",
+        "category": 83,
+        "text": "Combo est un module relais KNX multi-fonctions qui a une grande capacité de traitement et qui peut répondre à toutes les commandes d’automatisation.\r\n\r\nAvec ses paramètres spécialement conçus, le produit - qui est le résultat d’une ingénierie turque avancée - rend les utilisateurs heureux dans des projets prestigieux avec ses composants de qualité supérieure.\r\n\r\nNous l’avons développé avec des normes de qualité supérieure et nous le vendons au monde entier..\r\n\r\nLes modules relais, qui sont les principaux éléments de commande du processus d’automatisation, sont produits en différents types pour différents contrôles. Par exemple, un module utilisé pour le contrôle de la lampe ne peut pas contrôler la bobine de ventilateur. Cependant, Combo peut effectuer ceci.\r\nInterra Combo est également le module KNX avec la plus large gamme.\r\n\r\nEntre 4 et 24 canaux, 6 tailles différentes, et 4, 8, 12, 16, 20, 24 combos de canaux assurent l’efficacité du projet.\r\nle produit que vous pouvez avoir permet la solution la plus optimale pour les projets avec des produits KNX avec des équipements spécifiques élevés, et il contribue à réduire les coûts énergétiques en augmentant le confort de votre espace de vie.\r\n\r\nVous pouvez faire toutes les commandes avec un seul combo;\r\n-Éclairage\r\n-Rideau – obturateur\r\n-FCU",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T09:47:18.268Z",
+        "updated": "2022-02-08T09:45:23.850Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 11,
+    "fields": {
+        "name": "Iswitch",
+        "reference": null,
+        "slug": "iswitch",
+        "category": 78,
+        "text": "Interra Iswitch apporte fonctionnalité et design aux utilisateurs.\r\n\r\nAvec son design élégant, Iswitch a attiré l’attention sur ses talents. Il répond à toutes les attentes avec un large éventail d’options de matériaux et de couleurs.\r\n\r\nUn contrôle intelligent offre une efficacité énergétique tout en ajoutant confort et esthétique à votre espace de vie en même temps.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T10:08:01.600Z",
+        "updated": "2022-02-08T09:46:27.609Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 12,
+    "fields": {
+        "name": "Interra just touch",
+        "reference": null,
+        "slug": "interra-just-touch",
+        "category": 78,
+        "text": "JUST TOUCH, un interrupteur thermostat de nouvelle génération conçu par notre centre de R&D INTERRA, vous ouvre les portes d’un confort unique.\r\n\r\n-Éclairage\r\n\r\n-Contrôle de couleur RVB et Tunable White\r\n\r\n-Contrôle des rideaux et des stores\r\n\r\n-Climatisation\r\n\r\n-Pages programmables gratuites\r\n\r\n-Hôtel-MDN/MUR\r\n\r\n-Sensibilité aux vibrations tactiles\r\n\r\n-Capteur de température et d’humidité",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T10:08:01.601Z",
+        "updated": "2022-02-08T10:04:24.132Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 13,
+    "fields": {
+        "name": "Just Touch PRO",
+        "reference": null,
+        "slug": "just-touch-pro",
+        "category": 78,
+        "text": "JUST TOUCH, un interrupteur thermostat de nouvelle génération conçu par notre centre de R&D INTERRA, vous ouvre les portes d’un confort unique.\r\n\r\n-Éclairage\r\n-Contrôle de couleur RVB et Tunable White\r\n-Contrôle des rideaux et des stores\r\n-Climatisation\r\n-Pages programmables gratuites\r\n-Hôtel-MDN/MUR\r\n-Sensibilité aux vibrations tactiles\r\n-Capteur de température et d’humidité",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T10:08:01.602Z",
+        "updated": "2022-02-08T09:48:24.603Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 14,
+    "fields": {
+        "name": "iSwitch Anthracite Matt Plastic",
+        "reference": null,
+        "slug": "iswitch-anthracite-matt-plastic",
+        "category": 78,
+        "text": "Interra Iswitch apporte fonctionnalité et design aux utilisateurs.\r\n\r\nAvec son design élégant , Iswitch a attiré l’attention sur ses talents. Il répond à toutes les attentes avec un large éventail d’options de matériaux et de couleurs.\r\n\r\nUn contrôle intelligent offre une efficacité énergétique tout en ajoutant confort et esthétique à votre espace de vie en même temps.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T13:24:08.732Z",
+        "updated": "2022-02-08T09:50:21.806Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 15,
+    "fields": {
+        "name": "iSwitch plastique gris métallique",
+        "reference": null,
+        "slug": "iswitch-plastique-gris-metallique",
+        "category": 78,
+        "text": "Interra Iswitch apporte fonctionnalité et design aux utilisateurs.\r\n\r\nAvec son design élégant, Iswitch a attiré l’attention sur ses talents. Il répond à toutes les attentes avec un large éventail d’options de matériaux et de couleurs.\r\n\r\nUn contrôle intelligent offre une efficacité énergétique tout en ajoutant confort et esthétique à votre espace de vie en même temps.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T13:24:08.733Z",
+        "updated": "2022-02-08T09:54:43.015Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 16,
+    "fields": {
+        "name": "Acier inoxydable naturel iSwitch",
+        "reference": null,
+        "slug": "acier-inoxydable-naturel-iswitch",
+        "category": 78,
+        "text": "Interra Iswitch apporte fonctionnalité et design aux utilisateurs.\r\n\r\nAvec son design élégant, Iswitch a attiré l’attention sur ses talents. Il répond à toutes les attentes avec un large éventail d’options de matériaux et de couleurs.\r\n\r\nUn contrôle intelligent offre une efficacité énergétique tout en ajoutant confort et esthétique à votre espace de vie en même temps.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T13:24:08.734Z",
+        "updated": "2022-02-08T09:55:33.922Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 17,
+    "fields": {
+        "name": "Mitsubishi KNX passerelle électrique",
+        "reference": null,
+        "slug": "mitsubishi-knx-passerelle-electrique",
+        "category": 81,
+        "text": "ITR-830-001 est utilisé pour surveiller et contrôler toutes les fonctions des climatiseurs électriques Mitsubishi avec KNX; il est également compatible avec tous les modèles des séries Domestique, Mr. Slim et City Multi vendus par Mitsubishi Electric.\r\nITR830 a une fonction d’installation facile. Il peut être installé dans sa propre unité intérieure AC, un côté est directement connecté au circuit électronique de l’unité intérieure AC (support de câble) et l’autre côté directement au bus de données KNX.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T14:30:17.548Z",
+        "updated": "2022-02-08T09:59:02.108Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 18,
+    "fields": {
+        "name": "passerelle LG KNX",
+        "reference": null,
+        "slug": "passerelle-lg-knx",
+        "category": 81,
+        "text": "LG KNX passerelle\r\nSpécialement conçu pour permettre le contrôle bidirectionnel et la surveillance des systèmes VRF de LG à partir d’une installation KNX. Avec ce produit, vous pouvez faire 1 unité intérieure en même temps avec 2 ports de connexion indépendants.\r\n\r\n-Connexion directe au bus de l’unité intérieure et au bus KNX\r\n-Commande complète du système d’unité intérieure\r\n-Distance de câble jusqu’à 300 mètres entre l’unité intérieure et la passerelle\r\n-Pour les scénarios d’automatisation complexes : 8 convertisseurs et 4 blocs logiques.\r\n-5 scénarios indépendants pour chaque unité intérieure\r\n-Modes spéciaux pour chaque unité intérieure\r\n-Scénarios de panne d’alimentation du bus\r\n-Fonctions de verrouillage\r\n-Transmission du code d’erreur au bus KNX",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T14:30:17.550Z",
+        "updated": "2022-02-08T09:59:43.119Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 19,
+    "fields": {
+        "name": "Mitsubishi passerelle lourde KNX",
+        "reference": null,
+        "slug": "mitsubishi-passerelle-lourde-knx",
+        "category": 81,
+        "text": "Mitsubishi passerelle lourde est un dispositif d’interface qui permet l’intégration de climatiseurs commerciaux et industriels dans le système de bus Knx.\r\nToutes les commandes nécessaires à l’utilisateur final peuvent être effectuées via cet appareil. Il contient des interfaces logiques et de conversion pour répondre aux besoins supplémentaires qui peuvent survenir sur le terrain.\r\nPour la flexibilité de contrôle, de nombreux objets ont des objets de contrôle et de rétroaction, à la fois en bits et en octets. Des modes utilisateur spéciaux ont été ajoutés au confort de l’utilisateur.",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T14:30:17.550Z",
+        "updated": "2022-02-08T10:00:34.689Z"
+    }
+},
+{
+    "model": "core.product",
+    "pk": 20,
+    "fields": {
+        "name": "passerelle Samsung KNX",
+        "reference": null,
+        "slug": "passerelle-samsung-knx",
+        "category": 81,
+        "text": "The Samsung interface has been specially designed to allow bidirectional control and monitoring of Samsung NASA VRF systems from a KNX installation. You can 4 indoor unit at same time with 2 independent connection ports with this product.\r\n\r\n-Direct connection to indoor unit bus and KNX bus\r\n-Fully control of indoor unit system\r\n-Up to 300meter cable distance between indoor unit and gateway\r\n-For complex automation scenarios: 8 converters and 4 logic blocks.\r\n-5 independent scenario for each indoor unit\r\n-Special modes for each indoor unit\r\n-Bus energy failure scenarios\r\n-Locking functions\r\n-Error code transfer to KNX Bus",
+        "description": "",
+        "price": "1.00",
+        "old_price": null,
+        "gamme": null,
+        "actif": true,
+        "new": true,
+        "top": true,
+        "status": "N",
+        "created": "2022-02-07T14:30:17.551Z",
+        "updated": "2022-02-08T10:01:15.557Z"
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 10,
+    "fields": {
+        "fichier": "images/produits/web-03-crop.png",
+        "actif": true,
+        "produit": 6
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 11,
+    "fields": {
+        "fichier": "images/produits/web-02.png",
+        "actif": true,
+        "produit": 6
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 12,
+    "fields": {
+        "fichier": "images/produits/web-01_1.png",
+        "actif": true,
+        "produit": 7
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 13,
+    "fields": {
+        "fichier": "images/produits/touch-panel-01-crop.jpg",
+        "actif": true,
+        "produit": 8
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 14,
+    "fields": {
+        "fichier": "images/produits/touch-panel-02.jpg",
+        "actif": true,
+        "produit": 9
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 15,
+    "fields": {
+        "fichier": "images/produits/sip-server-crop.jpg",
+        "actif": true,
+        "produit": 10
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 16,
+    "fields": {
+        "fichier": "images/produits/anahtar-priz-02-02-crop.jpg",
+        "actif": true,
+        "produit": 11
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 17,
+    "fields": {
+        "fichier": "images/produits/just-touch-full-touch-crop.png",
+        "actif": true,
+        "produit": 13
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 18,
+    "fields": {
+        "fichier": "images/produits/anahtar-priz-02-02-crop_LpMn8oV.jpg",
+        "actif": true,
+        "produit": 14
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 19,
+    "fields": {
+        "fichier": "images/produits/itr308-1005-crop.jpg",
+        "actif": true,
+        "produit": 15
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 20,
+    "fields": {
+        "fichier": "images/produits/44.jpg",
+        "actif": true,
+        "produit": 16
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 21,
+    "fields": {
+        "fichier": "images/produits/21.jpg",
+        "actif": true,
+        "produit": 17
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 22,
+    "fields": {
+        "fichier": "images/produits/88.jpg",
+        "actif": true,
+        "produit": 18
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 23,
+    "fields": {
+        "fichier": "images/produits/696.png",
+        "actif": true,
+        "produit": 19
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 24,
+    "fields": {
+        "fichier": "images/produits/85.png",
+        "actif": true,
+        "produit": 20
+    }
+},
+{
+    "model": "core.photoproduct",
+    "pk": 25,
+    "fields": {
+        "fichier": "images/produits/just-touch-full-touch-crop_lMztgMv.png",
+        "actif": true,
+        "produit": 12
+    }
+},
+{
+    "model": "core.productdocument",
+    "pk": 4,
+    "fields": {
+        "file": "images/produits/itr165-0002-i7-plus-ds220201088aen.pdf",
+        "name": "i7-touch-panel-plus",
+        "produit": 6
+    }
+},
+{
+    "model": "core.solution",
+    "pk": 1,
+    "fields": {
+        "name": "INTERRA GRMS et solutions hôtelières intelligentes",
+        "photo": "icon/hotel-1-crop.jpg",
+        "home_image": "icon/WhatsApp_Image_2022-02-08_at_11.43.18_SE5KfLj.jpeg",
+        "slug": "interra-grms-and-smart-hotel-solutions",
+        "description": "",
+        "actif": true,
+        "created": "2022-02-06T14:21:20.302Z",
+        "updated": "2022-02-08T12:44:00.309Z"
+    }
+},
+{
+    "model": "core.solution",
+    "pk": 2,
+    "fields": {
+        "name": "Solutions commerciales et publiques",
+        "photo": "images/solutions/ticari-1-1-crop.jpg",
+        "home_image": "icon/WhatsApp_Image_2022-02-08_at_11.43.18_1.jpeg",
+        "slug": "solutions-commerciales-et-publiques",
+        "description": "",
+        "actif": true,
+        "created": "2022-02-08T08:09:49.463Z",
+        "updated": "2022-02-08T10:45:51.889Z"
+    }
+},
+{
+    "model": "core.solution",
+    "pk": 3,
+    "fields": {
+        "name": "Résidence et Villa Solutions",
+        "photo": "icon/zz.jpg",
+        "home_image": "icon/WhatsApp_Image_2022-02-08_at_11.50.56.jpeg",
+        "slug": "residence-et-villa-solutions",
+        "description": "Residence Smart Building Solutions avec INTERRA\r\n\r\nEnsemble, nous créons votre parcours numérique intelligent unique, de la stratégie à la conception - R&D et mise en œuvre.",
+        "actif": true,
+        "created": "2022-02-08T08:32:07.462Z",
+        "updated": "2022-02-08T10:51:30.300Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 1,
+    "fields": {
+        "name": "Logiciel hôtelier (GRMS) avec intégrations et interface",
+        "photo": "images/solutions/untitled-1-01-01.png",
+        "solution": 1,
+        "description": "Le GRMS peut être interfacé avec le logiciel de l'hôtel ou le PMS de l'hôtel, de sorte que les paramètres de climatisation, d'éclairage et d'ambiance préférés sont automatiquement ajustés dès que l'enregistrement du client est affiché.\r\n\r\nL'objectif principal de l'utilisation de GRMS est de répondre systématiquement aux besoins et aux attentes des clients dans leurs chambres.",
+        "actif": true,
+        "created": "2022-02-06T14:21:20.306Z",
+        "updated": "2022-02-06T14:21:20.306Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 2,
+    "fields": {
+        "name": "Mobile Check-in / Check-Out",
+        "photo": "images/solutions/untitled-1-02-01.png",
+        "solution": 1,
+        "description": "L’une des questions les plus importantes du système d’hôtel intelligent est l’enregistrement / départ mobile. Il permet aux clients d’utiliser leur téléphone intelligent pour l’enregistrement ou le départ pendant leur temps libre sans avoir à attendre à la réception, résumant les statistiques clés sur cette tendance à la hausse et les implications de l’enregistrement / départ mobile peut avoir.",
+        "actif": true,
+        "created": "2022-02-08T08:17:24.664Z",
+        "updated": "2022-02-08T08:17:24.664Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 3,
+    "fields": {
+        "name": "Service de personnalisation",
+        "photo": "images/solutions/ticari-1-1.jpg",
+        "solution": 1,
+        "description": "Sur le plan opérationnel, il n’y a pas deux emplois identiques. Si vous voulez une solution intelligente de système de gestion hôtelière qui convient parfaitement à votre entreprise, nous pouvons le faire pour vous. Avec notre service de personnalisation, vous pouvez personnaliser votre propre système de gestion de l’hôtel exactement comme vous le souhaitez.",
+        "actif": true,
+        "created": "2022-02-08T08:17:24.668Z",
+        "updated": "2022-02-08T08:17:24.668Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 4,
+    "fields": {
+        "name": "Smart home",
+        "photo": "images/solutions/icon-05.png",
+        "solution": 3,
+        "description": "-Éclairage\r\n\r\n-Rideaux et stores\r\n\r\n-Climatiseur\r\n\r\n-Scénarios",
+        "actif": true,
+        "created": "2022-02-08T08:32:07.468Z",
+        "updated": "2022-02-08T08:32:07.468Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 5,
+    "fields": {
+        "name": "Contrôle mobile",
+        "photo": "images/solutions/icon-06.png",
+        "solution": 3,
+        "description": "En développant des logiciels sur chaque plateforme pour les utilisateurs d’INTERRA, vous pouvez contrôler l’automatisation, les services de conciergerie, les alarmes et d’autres fonctionnalités à partir de vos smartphones, iPad et même iWatch.",
+        "actif": true,
+        "created": "2022-02-08T08:32:07.471Z",
+        "updated": "2022-02-08T08:32:07.471Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 6,
+    "fields": {
+        "name": "COMMUNICATION PAR SIP/VOIP",
+        "photo": "images/solutions/icon-07.png",
+        "solution": 3,
+        "description": "-SIP\r\n\r\n-VoIP\r\n\r\n-Reconnaissance faciale\r\n\r\n-Card Pass\r\n\r\n-Renvoi d’appel\r\n\r\n-Logging",
+        "actif": true,
+        "created": "2022-02-08T08:32:07.472Z",
+        "updated": "2022-02-08T08:32:07.473Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 7,
+    "fields": {
+        "name": "système de sécurité",
+        "photo": "images/solutions/icon-08.png",
+        "solution": 3,
+        "description": "-Caméras\r\n\r\n-Détecteur d’alarme antivol\r\n\r\n-Détecteur d’alarme incendie\r\n\r\n-Détecteur de bris de verre\r\n\r\n-Capteur de fuite de gaz\r\n\r\n-Capteur de santé d’urgence",
+        "actif": true,
+        "created": "2022-02-08T08:32:07.474Z",
+        "updated": "2022-02-08T08:32:07.475Z"
+    }
+},
+{
+    "model": "core.solutionelement",
+    "pk": 8,
+    "fields": {
+        "name": "services de conciergerie",
+        "photo": "images/solutions/icon-09.png",
+        "solution": 3,
+        "description": "Le menu des services vous offre la solution à tous les problèmes que vous pouvez avoir à la maison.\r\n\r\nCes services sont appelés par des panneaux INTERRA ou par des applications mobiles INTERRA et des informations instantanées sont transmises au hall d’entrée, à la réception ou à la gestion du bâtiment.",
+        "actif": true,
+        "created": "2022-02-08T08:32:07.522Z",
+        "updated": "2022-02-08T08:32:07.522Z"
+    }
+},
+{
+    "model": "delivery.wilaya",
+    "pk": 1,
+    "fields": {
+        "name": "alger",
+        "mat": 16,
+        "price": "900.00",
+        "active": true
+    }
+},
+{
+    "model": "delivery.wilaya",
+    "pk": 2,
+    "fields": {
+        "name": "blida",
+        "mat": 9,
+        "price": "700.00",
+        "active": true
+    }
+},
+{
+    "model": "delivery.commune",
+    "pk": 1,
+    "fields": {
+        "wilaya": 1,
+        "name": "alger centre"
+    }
+},
+{
+    "model": "delivery.commune",
+    "pk": 2,
+    "fields": {
+        "wilaya": 1,
+        "name": "hydra"
+    }
+},
+{
+    "model": "delivery.commune",
+    "pk": 3,
+    "fields": {
+        "wilaya": 1,
+        "name": "ben aknoun"
+    }
+},
+{
+    "model": "delivery.commune",
+    "pk": 4,
+    "fields": {
+        "wilaya": 2,
+        "name": "blida"
+    }
+},
+{
+    "model": "delivery.commune",
+    "pk": 5,
+    "fields": {
+        "wilaya": 2,
+        "name": "boufarik"
+    }
+},
+{
+    "model": "delivery.commune",
+    "pk": 6,
+    "fields": {
+        "wilaya": 2,
+        "name": "afroun"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 1,
+    "fields": {
+        "first_name": "Taki",
+        "last_name": "Naimi",
+        "address": "Centre zabana blida",
+        "phone": "+33553961612",
+        "campany": null,
+        "email": "inter.taki@gmail.com",
+        "wilaya": 1,
+        "commune": 1,
+        "created": "2021-10-05T13:45:03.983Z",
+        "updated": "2021-10-05T13:45:04.025Z",
+        "note": "",
+        "paid": false,
+        "confirmer": false,
+        "coupon": null,
+        "discount": "0.00",
+        "delivery_cost": "900.00"
+    }
+},
+{
+    "model": "order.order",
+    "pk": 2,
+    "fields": {
+        "first_name": "Rym",
+        "last_name": "Bouchetara",
+        "address": "Cité 206 logements, batiment 14, numéro 12, Ouled Yaïch Blida.",
+        "phone": "0556096455",
+        "campany": null,
+        "email": "Hildweig@gmail.com",
+        "wilaya": 1,
+        "commune": 2,
+        "created": "2021-10-07T09:38:52.361Z",
+        "updated": "2021-10-07T09:38:52.403Z",
+        "note": "",
+        "paid": false,
+        "confirmer": false,
+        "coupon": null,
+        "discount": "0.00",
+        "delivery_cost": "900.00"
+    }
+},
+{
+    "model": "business.business",
+    "pk": 1,
+    "fields": {
+        "name": "pmatel",
+        "logo": "images/logos/logo.png",
+        "logo_negatif": "images/slides/logo.png",
+        "title": "Entreprise de production et de distribution d’éner",
+        "adress": "",
+        "email": "commercial@pmatel.dz",
+        "email2": "",
+        "phone": "0770 63 81 53",
+        "phone2": "",
+        "about": "<p>Nous mettons le mat&eacute;riels et les solutions n&eacute;cessaire afin de r&eacute;pondre a vos besoin.<br />Une &eacute;quipe de r&eacute;alisation a l&rsquo;&eacute;coute et des d&rsquo;ing&eacute;nieurs techniques, d&rsquo;&eacute;tudes et de suivit vous accompagne afin de vous soutenir tout au long de vos projet.</p>",
+        "about_photo": "slides/about.jpg",
+        "facebook": "https://www.facebook.com/camebptalgerie",
+        "insta": null,
+        "twitter": null,
+        "linkedin": null,
+        "youtube": null,
+        "chat_code": "",
+        "pixel": "",
+        "analytics": "",
+        "contact_message": "",
+        "google_maps": ""
+    }
+},
+{
+    "model": "business.slide",
+    "pk": 1,
+    "fields": {
+        "photo": "slides/home-1.jpg",
+        "title": "XVP Design exclusive, Performance impressionnante",
+        "sub_title": "La nouvelle génération de IP Platine de rue",
+        "url": "http://127.0.0.1:8000/produits",
+        "actif": true
+    }
+},
+{
+    "model": "business.slide",
+    "pk": 2,
+    "fields": {
+        "photo": "slides/hom-2_a7KbMCN.jpg",
+        "title": "le nouvel séleceur numérique",
+        "sub_title": "Vous voulez un contrôle plus intelligent",
+        "url": "http://127.0.0.1:8000/produits",
+        "actif": true
+    }
+},
+{
+    "model": "business.threephotos",
+    "pk": 1,
+    "fields": {
+        "photo": "slides/ban-square-OP-Saison-chauffe-2021.jpg",
+        "url": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "business.threephotos",
+    "pk": 2,
+    "fields": {
+        "photo": "slides/ban-square-OP-SAISON-CHAUFFE-ATLANTIC-2021.jpg",
+        "url": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "business.threephotos",
+    "pk": 3,
+    "fields": {
+        "photo": "slides/ban-square-wiser0921.jpg",
+        "url": "http://127.0.0.1:8000/produits"
+    }
+},
+{
+    "model": "business.threephotos",
+    "pk": 4,
+    "fields": {
+        "photo": "slides/OPAutomatismesPortierFAACLEGRAND-ban-square-1-.jpg",
+        "url": "http://127.0.0.1:8000/"
+    }
+},
+{
+    "model": "business.counter",
+    "pk": 1,
+    "fields": {
+        "name": "ans d'experience",
+        "number": 22,
+        "actif": true
+    }
+},
+{
+    "model": "business.counter",
+    "pk": 2,
+    "fields": {
+        "name": "Projets réalisers",
+        "number": 300,
+        "actif": true
+    }
+},
+{
+    "model": "business.counter",
+    "pk": 3,
+    "fields": {
+        "name": "clients satisfaits",
+        "number": 1900,
+        "actif": true
+    }
+},
+{
+    "model": "business.counter",
+    "pk": 4,
+    "fields": {
+        "name": "Trophés Reçus",
+        "number": 30,
+        "actif": true
+    }
+},
+{
+    "model": "business.clientservice",
+    "pk": 1,
+    "fields": {
+        "name": "Équipe expérimentée",
+        "sub_title": "Righteous indignations working beguileds all demoralized that blinded our works.",
+        "actif": true
+    }
+},
+{
+    "model": "business.clientservice",
+    "pk": 2,
+    "fields": {
+        "name": "sûr et sécuriser à 100%",
+        "sub_title": "Des avantages qui deviennent des solutions",
+        "actif": true
+    }
+},
+{
+    "model": "business.clientservice",
+    "pk": 3,
+    "fields": {
+        "name": "Visiter nos références",
+        "sub_title": "Rejects pleasures to secure other pleasures, endures pains to avoid worse.",
+        "actif": true
+    }
+},
+{
+    "model": "business.clientservice",
+    "pk": 4,
+    "fields": {
+        "name": "Distributeur CAME BPT exclusif",
+        "sub_title": "Une assistance technique et un service après vente assurés à long terme.",
+        "actif": true
+    }
+}
+]

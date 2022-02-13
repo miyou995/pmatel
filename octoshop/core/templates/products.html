@@ -4,23 +4,24 @@
 
 {% block content %}
 {% if category and request.GET.category != 'all' %}
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="breadcrumbs d-flex flex-row align-items-center" style="margin-bottom: 0px;">
-                            <ul>
-                                <li><a href="{% url 'core:index' %}">Acceuil</a></li>
-                                {% for cat in category.get_ancestors %}
-                                <li><a href="{{cat.get_absolute_url}}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{cat.name}}</a></li>
-                                {% endfor %}
-                                <li class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>{{category.name}}</li>
-                            </ul>
-                        </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="breadcrumbs d-flex flex-row align-items-center" style="margin-bottom: 0px;">
+                        <ul>
+                            <li><a href="{% url 'core:index' %}">Acceuil</a></li>
+                            <li><a href="{% url 'core:products' %}"><i class="fa fa-angle-right" aria-hidden="true"></i>Catalogue</a></li>
+                            {% for cat in category.get_ancestors %}
+                            <li><a href="{{cat.get_absolute_url}}"><i class="fa fa-angle-right" aria-hidden="true"></i>{{cat.name}}</a></li>
+                            {% endfor %}
+                            <li class="active"><i class="fa fa-angle-right" aria-hidden="true"></i>{{category.name}}</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 {% endif %}
 
 <section id="shop-area" class="main-shop-area" style="padding-top: 20px;">
@@ -46,7 +47,7 @@
             {% endfor %}
         </div>
         <div class="row">
-            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 float-right">
+            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 float-right" id="products_row">
                 {% include "snippets/htmx_products.html" %}
             </div>
             <div class="col-xl-3 col-lg-4 col-md-8 col-sm-12 float-left">
@@ -56,8 +57,11 @@
                             <h3>Categories</h3>
                         </div>
                         <ul class="categories clearfix">
-                            {% recursetree categories %}
-                                <li><a href="{{node.get_absolute_url}}">{{node.name}}</a></li>
+                                <li><a href="{% url 'core:products' %}">Tous les produits</a></li>
+                                {% recursetree categories %}
+                                {% if node.has_products %}
+                                    <li><a href="{{node.get_absolute_url}}">{{node.name}}</a></li>
+                                {% endif %}
                             {% endrecursetree %}
                         </ul>
                     </div>
