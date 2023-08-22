@@ -52,8 +52,8 @@ class ThreePhotosAdmin(admin.ModelAdmin):
 class BusinesAdmin(admin.ModelAdmin):
     list_display = ('id', 'name')
     list_display_links = ('id', 'name')
-    def has_add_permission(self, request):
-        return False
+    # def has_add_permission(self, request):
+    #     return False
 
 
 @admin.register(Counter)
