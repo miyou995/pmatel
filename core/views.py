@@ -33,9 +33,7 @@ class IndexView(TemplateView):
         for cat in all_cat:
             if cat.products.all().count() > 0:
                 cat_list.append(cat)
-        print('categories ', cat_list)
         context["random_cat"] = cat_list[:3]
-        print('a tchou hadi', context["new_products"])
         return context
 
 
